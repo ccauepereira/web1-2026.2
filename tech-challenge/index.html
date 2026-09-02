@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Challenge 2026&trade; | Programação Web I - IFCE Campus Maracanaú</title>
+</head>
+<body>
+
+    <!-- ==================== CABEÇALHO E NAVEGAÇÃO PRINCIPAL (RF01, RF02) ==================== -->
+    <header id="inicio">
+        <!-- RF01: Identificação do evento e subtítulo descritivo -->
+        <h1>Tech Challenge 2026&trade;</h1>
+        <h2>3&ordm; Encontro Anual de Tecnologia, Padrões Web e Desenvolvimento de Software</h2>
+        <p>
+            <strong>Data:</strong> 15 a 17 de Outubro de 2026 &bull; 
+            <strong>Local:</strong> IFCE &ndash; Instituto Federal do Ceará (Campus Maracanaú) &bull; 
+            <strong>Modalidade:</strong> Presencial
+        </p>
+
+        <hr>
+
+        <!-- RF02: Menu de navegação interna e links complementares -->
+        <nav aria-label="Navegação Principal do Evento">
+            <h3>Menu de Navegação</h3>
+            <ul>
+                <li><a href="#sobre">Sobre o Evento</a></li>
+                <li><a href="#multimidia">Recursos Multimídia</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+                <li><a href="#informacoes">Informações Importantes</a></li>
+                <li><a href="#termo">Termo de Participação</a></li>
+                <li><a href="palestrantes.html">Palestrantes Convidados</a></li>
+                <li><a href="faq.html">Perguntas Frequentes (FAQ)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+    <main>
+
+        <!-- ==================== SEÇÃO 1: SOBRE O EVENTO (RF01, RF03, RF04, RF08) ==================== -->
+        <section id="sobre">
+            <h2>Sobre o Tech Challenge 2026&trade;</h2>
+
+            <p>
+                O <strong>Tech Challenge 2026&trade;</strong> é o evento acadêmico de tecnologia mais aguardado do Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú. Idealizado e promovido no âmbito da disciplina de <em>Programação Web I</em>, sob a coordenação do <strong>Prof. Daniel Ferreira</strong>, o evento visa integrar a comunidade acadêmica de Informática, Telemática e Engenharia da Computação em torno dos pilares contemporâneos da tecnologia da informação.
+            </p>
+
+            <p>
+                Durante três dias imersivos, estudantes, pesquisadores e profissionais de mercado reúnem-se para compartilhar conhecimento sobre <strong>padrões web abertos</strong>, arquiteturas escaláveis, inteligência artificial e boas práticas de acessibilidade digital. O Tech Challenge consolida-se como um laboratório vivo de inovação &amp; criatividade, incentivando o desenvolvimento colaborativo por meio de hackathons, palestras magnas e oficinas técnicas orientadas a desafios reais da sociedade.
+            </p>
+
+            <!-- RF03: Imagem representativa com figure, figcaption, alt e link clicável para o IFCE -->
+            <figure>
+                <a href="https://ifce.edu.br" target="_blank" rel="noopener noreferrer">
+                    <img src="imagens/evento.jpg" alt="Fachada do IFCE Campus Maracanaú com logotipo oficial do Tech Challenge 2026" width="600">
+                </a>
+                <figcaption>
+                    Figura 1: Painel institucional do Tech Challenge 2026&trade; no IFCE Campus Maracanaú &bull; Clique na imagem para visitar o portal oficial do IFCE (&rarr;).
+                </figcaption>
+            </figure>
+
+            <!-- RF04: Links externos com target="_blank" -->
+            <p>
+                Para mais detalhes sobre as instalações e projetos de pesquisa do campus, acesse o 
+                <a href="https://ifce.edu.br" target="_blank" rel="noopener noreferrer">Portal Oficial do IFCE</a>. 
+                Para conhecer as recomendações internacionais sobre a estruturação de documentos na web, consulte as diretrizes do 
+                <a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">World Wide Web Consortium (W3C)</a>.
+            </p>
+
+            <!-- Link de retorno ao topo -->
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== SEÇÃO 2: RECURSOS MULTIMÍDIA (RF08, RF09, RF10) ==================== -->
+        <section id="multimidia">
+            <h2>Recursos Multimídia</h2>
+
+            <!-- RF09: Vídeo promocional com controls, width e fallback -->
+            <article>
+                <h3>Vídeo Oficial de Apresentação</h3>
+                <p>Confira o vídeo de divulgação com os destaques das edições anteriores e o que esperar do Tech Challenge 2026&trade;:</p>
+                <video controls width="500">
+                    <source src="video/apresentacao.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo HTML5. Você pode <a href="video/apresentacao.mp4" download>baixar o arquivo de vídeo MP4 aqui</a>.
+                </video>
+            </article>
+
+            <!-- RF10: Áudio de boas-vindas com controls e fallback -->
+            <article>
+                <h3>Mensagem de Boas-Vindas da Coordenação (Áudio)</h3>
+                <p>Ouça o recado especial da comissão organizadora para todos os participantes inscritos:</p>
+                <audio controls>
+                    <source src="audio/boas-vindas.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio HTML5. Você pode <a href="audio/boas-vindas.mp3" download>baixar o arquivo de áudio MP3 aqui</a>.
+                </audio>
+            </article>
+
+            <!-- Link de retorno ao topo -->
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== SEÇÃO 3: PROGRAMAÇÃO DO EVENTO (RF05, RF06) ==================== -->
+        <section id="programacao">
+            <h2>Programação do Evento</h2>
+            <p>Confira a programação completa distribuída entre os auditórios e laboratórios do Campus Maracanaú:</p>
+
+            <!-- RF05 e RF06: Tabela formatada nativamente com cabeçalho, pelo menos 8 atividades e mesclagem (colspan/rowspan) -->
+            <table border="1" cellpadding="8" cellspacing="0">
+                <caption>Quadro Geral de Atividades e Horários &ndash; Tech Challenge 2026</caption>
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                        <th>Local</th>
+                        <th>Responsável</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 1. Abertura Oficial -->
+                    <tr>
+                        <td>08:00 &ndash; 09:00</td>
+                        <td>Sessão Solene de Abertura Oficial e Credenciamento</td>
+                        <td>Auditório Central</td>
+                        <td>Direção do IFCE &amp; Coordenação de Telemática</td>
+                    </tr>
+                    <!-- 2. Palestra Magna -->
+                    <tr>
+                        <td>09:00 &ndash; 10:30</td>
+                        <td>Palestra Magna: "O Futuro da Inteligência Artificial e da Web Aberta"</td>
+                        <td>Auditório Central</td>
+                        <td>Dra. Helena Vasconcelos</td>
+                    </tr>
+                    <!-- 3. Intervalo / Coffee Break com mesclagem colspan="3" (RF06) -->
+                    <tr>
+                        <td>10:30 &ndash; 11:00</td>
+                        <td colspan="3"><strong>Intervalo Institucional &bull; Coffee Break e Network no Hall de Convivência</strong></td>
+                    </tr>
+                    <!-- 4. Mesa Redonda -->
+                    <tr>
+                        <td>11:00 &ndash; 12:30</td>
+                        <td>Mesa Redonda: "Desafios Éticos e Padrões W3C na Era da Computação Ubíqua"</td>
+                        <td>Auditório Central</td>
+                        <td>Prof. Carlos Eduardo e Pesquisadores Convidados</td>
+                    </tr>
+                    <!-- 5. Oficina Técnica com rowspan="2" no horário estendido de práticas (RF06) -->
+                    <tr>
+                        <td rowspan="2">14:00 &ndash; 17:30</td>
+                        <td>Oficina Técnica: "Construção de Documentos Semânticos e Acessíveis em HTML5 Puro"</td>
+                        <td>Laboratório de Informática 01</td>
+                        <td>Prof. Daniel Ferreira</td>
+                    </tr>
+                    <!-- 6. Atividade Prática de Laboratório (paralela no mesmo bloco da tarde) -->
+                    <tr>
+                        <td>Atividade Prática de Laboratório: "Cibersegurança Defensiva e Análise de Tráfego de Redes"</td>
+                        <td>Laboratório de Redes 02</td>
+                        <td>Eng. Sofia Mendes</td>
+                    </tr>
+                    <!-- 7. Competição / Hackathon -->
+                    <tr>
+                        <td>18:00 &ndash; 21:00</td>
+                        <td>Competição / Hackathon: "Desafio de Desenvolvimento de Soluções com Software Livre"</td>
+                        <td>Espaço de Inovação Aberta</td>
+                        <td>Msc. Lucas Pinheiro &amp; Comissão Julgadora</td>
+                    </tr>
+                    <!-- 8. Premiação e Encerramento -->
+                    <tr>
+                        <td>21:00 &ndash; 22:00</td>
+                        <td>Premiação dos Vencedores do Hackathon e Sessão de Encerramento</td>
+                        <td>Auditório Central</td>
+                        <td>Comissão Organizadora do IFCE</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Link de retorno ao topo -->
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== SEÇÃO 4: ATIVIDADES (RF07) ==================== -->
+        <section id="atividades">
+            <h2>Atividades do Evento</h2>
+
+            <!-- Competições -->
+            <h3>Competições Acadêmicas e Tecnológicas</h3>
+            <ul>
+                <li><strong>Hackathon de Inovação Aberta:</strong> Maratona contínua de prototipagem de soluções tecnológicas voltadas para sustentabilidade e educação pública.</li>
+                <li><strong>Maratona de Programação:</strong> Competição de resolução rápida de problemas algorítmicos complexos em equipe.</li>
+                <li><strong>Capture The Flag (CTF):</strong> Competição no estilo desafio de segurança da informação, explorando criptografia, redes e engenharia reversa.</li>
+            </ul>
+
+            <!-- Oficinas Temáticas (mínimo 4 opções) -->
+            <h3>Oficinas Temáticas</h3>
+            <ul>
+                <li><strong>Oficina 1:</strong> Desenvolvimento Web Semântico e Acessibilidade em Padrões W3C.</li>
+                <li><strong>Oficina 2:</strong> Fundamentos de Inteligência Artificial e Engenharia de Prompts com Modelos de Linguagem.</li>
+                <li><strong>Oficina 3:</strong> Práticas Avançadas de Cibersegurança e Defesa de Redes Corporativas.</li>
+                <li><strong>Oficina 4:</strong> Modelagem, Otimização e Segurança em Bancos de Dados Relacionais.</li>
+            </ul>
+
+            <!-- Regras de Participação (mínimo 5 itens numerados) -->
+            <h3>Regras Gerais de Participação</h3>
+            <ol>
+                <li>A inscrição prévia e individual por meio do formulário oficial desta página é obrigatória para todos os participantes.</li>
+                <li>No primeiro dia do evento, cada participante deve apresentar documento oficial com foto para retirada de crachá e kit de credenciamento.</li>
+                <li>O acesso aos laboratórios de informática e redes é restrito aos inscritos nas respectivas oficinas técnicas.</li>
+                <li>Todos os participantes concordam em zelar pela conservação do patrimônio público e equipamentos laboratoriais do IFCE Campus Maracanaú.</li>
+                <li>Para fazer jus ao Certificado de Participação de 20 horas complementares, o participante deverá registrar presença em no mínimo 75% da carga horária das atividades.</li>
+            </ol>
+
+            <!-- Link de retorno ao topo -->
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== SEÇÃO 5: FORMULÁRIO DE INSCRIÇÃO (RF11 a RF23, RF26) ==================== -->
+        <section id="inscricao">
+            <h2>Formulário de Inscrição Oficial</h2>
+            <p>Preencha os dados abaixo com precisão. As inscrições são gratuitas e as vagas nas oficinas são limitadas.</p>
+            
+            <!-- RF26: Link destacado navegando para o Termo de Participação -->
+            <p>
+                <strong>Importante:</strong> Antes de preencher e submeter o formulário, 
+                <a href="#termo">consulte o Termo de Participação</a> completo.
+            </p>
+
+            <form action="confirmacao.html" method="get">
+
+                <!-- RF11: Dados Pessoais -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" id="nome" name="nome" required placeholder="Ex.: Maria de Oliveira Silva" size="50">
+                    </p>
+                    <p>
+                        <label for="nascimento">Data de Nascimento:</label><br>
+                        <input type="date" id="nascimento" name="nascimento" required>
+                    </p>
+                    <p>
+                        <label for="cpf">CPF:</label><br>
+                        <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" size="20">
+                    </p>
+                    <p>
+                        <label for="email">E-mail Institucional ou Pessoal:</label><br>
+                        <input type="email" id="email" name="email" required placeholder="nome@exemplo.com" size="40">
+                    </p>
+                    <p>
+                        <label for="telefone">Telefone / Celular (WhatsApp):</label><br>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(85) 98888-7777" size="20">
+                    </p>
+                    <p>
+                        <label for="senha">Senha de Acesso ao Portal:</label><br>
+                        <input type="password" id="senha" name="senha" required minlength="6" placeholder="Mínimo de 6 caracteres" size="25">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF12: Endereço -->
+                <fieldset>
+                    <legend>Endereço Residencial</legend>
+                    <p>
+                        <label for="cep">CEP:</label><br>
+                        <input type="text" id="cep" name="cep" required placeholder="61939-140" size="15">
+                    </p>
+                    <p>
+                        <label for="rua">Logradouro (Rua/Avenida):</label><br>
+                        <input type="text" id="rua" name="rua" required placeholder="Av. Contorno Norte" size="50">
+                    </p>
+                    <p>
+                        <label for="numero">Número:</label><br>
+                        <input type="number" id="numero" name="numero" required min="1" placeholder="10">
+                    </p>
+                    <p>
+                        <label for="complemento">Complemento:</label><br>
+                        <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, Sala" size="30">
+                    </p>
+                    <p>
+                        <label for="bairro">Bairro:</label><br>
+                        <input type="text" id="bairro" name="bairro" required placeholder="Distrito Industrial I" size="40">
+                    </p>
+                    <p>
+                        <label for="cidade">Cidade:</label><br>
+                        <input type="text" id="cidade" name="cidade" required value="Maracanaú" size="30">
+                    </p>
+                    <p>
+                        <label for="estado">Estado (UF):</label><br>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione o estado...</option>
+                            <option value="AC">Acre (AC)</option>
+                            <option value="AL">Alagoas (AL)</option>
+                            <option value="AP">Amapá (AP)</option>
+                            <option value="AM">Amazonas (AM)</option>
+                            <option value="BA">Bahia (BA)</option>
+                            <option value="CE" selected>Ceará (CE)</option>
+                            <option value="DF">Distrito Federal (DF)</option>
+                            <option value="ES">Espírito Santo (ES)</option>
+                            <option value="GO">Goiás (GO)</option>
+                            <option value="MA">Maranhão (MA)</option>
+                            <option value="MT">Mato Grosso (MT)</option>
+                            <option value="MS">Mato Grosso do Sul (MS)</option>
+                            <option value="MG">Minas Gerais (MG)</option>
+                            <option value="PA">Pará (PA)</option>
+                            <option value="PB">Paraíba (PB)</option>
+                            <option value="PR">Paraná (PR)</option>
+                            <option value="PE">Pernambuco (PE)</option>
+                            <option value="PI">Piauí (PI)</option>
+                            <option value="RJ">Rio de Janeiro (RJ)</option>
+                            <option value="RN">Rio Grande do Norte (RN)</option>
+                            <option value="RS">Rio Grande do Sul (RS)</option>
+                            <option value="RO">Rondônia (RO)</option>
+                            <option value="RR">Roraima (RR)</option>
+                            <option value="SC">Santa Catarina (SC)</option>
+                            <option value="SP">São Paulo (SP)</option>
+                            <option value="SE">Sergipe (SE)</option>
+                            <option value="TO">Tocantins (TO)</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF13: Situação do Participante -->
+                <fieldset>
+                    <legend>Situação do Participante</legend>
+                    <p>Selecione seu vínculo ou perfil acadêmico/profissional:</p>
+                    <p>
+                        <input type="radio" id="sit_estudante" name="situacao" value="estudante" checked>
+                        <label for="sit_estudante">Estudante (Ensino Técnico ou Superior)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="sit_professor" name="situacao" value="professor">
+                        <label for="sit_professor">Professor / Docente</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="sit_profissional" name="situacao" value="profissional">
+                        <label for="sit_profissional">Profissional da área de Tecnologia</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="sit_outro" name="situacao" value="outro">
+                        <label for="sit_outro">Outro perfil</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF14: Áreas de Interesse -->
+                <fieldset>
+                    <legend>Áreas de Interesse</legend>
+                    <p>Marque todas as áreas que despertam seu interesse (seleção múltipla):</p>
+                    <p>
+                        <input type="checkbox" id="int_ia" name="interesses" value="inteligencia_artificial">
+                        <label for="int_ia">Inteligência Artificial &amp; Machine Learning</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="int_web" name="interesses" value="desenvolvimento_web">
+                        <label for="int_web">Desenvolvimento Web e Padrões Semânticos</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="int_redes" name="interesses" value="redes">
+                        <label for="int_redes">Redes de Computadores e Telecomunicações</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="int_seguranca" name="interesses" value="seguranca">
+                        <label for="int_seguranca">Cibersegurança e Privacidade de Dados</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="int_bd" name="interesses" value="banco_dados">
+                        <label for="int_bd">Bancos de Dados e Big Data</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="int_cg" name="interesses" value="computacao_grafica">
+                        <label for="int_cg">Computação Gráfica e Processamento de Imagens</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="int_prog" name="interesses" value="programacao">
+                        <label for="int_prog">Lógica de Programação e Algoritmos Avançados</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF15: Escolha de Oficinas Temáticas (Mínimo 4 opções) -->
+                <fieldset>
+                    <legend>Inscrição em Oficinas Temáticas</legend>
+                    <p>Selecione as oficinas das quais deseja participar (sujeito à lotação das salas):</p>
+                    <p>
+                        <input type="checkbox" id="oficina_html" name="oficinas" value="oficina_html">
+                        <label for="oficina_html">Oficina 1: HTML5 Semântico e Acessibilidade Web (Padrões W3C)</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="oficina_ia" name="oficinas" value="oficina_ia">
+                        <label for="oficina_ia">Oficina 2: Introdução Prática a Modelos de Linguagem e Inteligência Artificial</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="oficina_redes" name="oficinas" value="oficina_redes">
+                        <label for="oficina_redes">Oficina 3: Roteamento Seguro e Arquitetura de Redes TCP/IP</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="oficina_sec" name="oficinas" value="oficina_seguranca">
+                        <label for="oficina_sec">Oficina 4: Fundamentos de Cibersegurança e Testes de Penetração Básicos</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF16: Palestra Principal (Seleção única entre 4 palestras) -->
+                <fieldset>
+                    <legend>Palestra Principal de Abertura</legend>
+                    <p>Escolha qual das palestras principais você assistirá presencialmente no Auditório Central:</p>
+                    <p>
+                        <input type="radio" id="palestra_ia" name="palestra_principal" value="palestra_ia" checked>
+                        <label for="palestra_ia">Palestra 1: "O Futuro da Inteligência Artificial na Educação e Indústria" &ndash; Dra. Helena Vasconcelos</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="palestra_w3c" name="palestra_principal" value="palestra_w3c">
+                        <label for="palestra_w3c">Palestra 2: "Evolução dos Padrões Abertos da W3C para uma Web Universal" &ndash; Prof. Carlos Eduardo</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="palestra_sec" name="palestra_principal" value="palestra_sec">
+                        <label for="palestra_sec">Palestra 3: "Cibersegurança e Proteção de Infraestruturas Críticas" &ndash; Eng. Sofia Mendes</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="palestra_cloud" name="palestra_principal" value="palestra_cloud">
+                        <label for="palestra_cloud">Palestra 4: "Computação em Nuvem e Arquiteturas Escaláveis de Alta Disponibilidade" &ndash; Msc. Lucas Pinheiro</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF17: Nível de Experiência em Programação -->
+                <fieldset>
+                    <legend>Nível de Experiência em Programação</legend>
+                    <p>Como você avalia sua bagagem técnica prévia em desenvolvimento de software?</p>
+                    <p>
+                        <input type="radio" id="exp_nenhuma" name="nivel_experiencia" value="nenhuma">
+                        <label for="exp_nenhuma">Nenhuma experiência (Interessado em aprender do zero)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="exp_iniciante" name="nivel_experiencia" value="iniciante" checked>
+                        <label for="exp_iniciante">Iniciante (Conhecimentos básicos de lógica ou tags HTML)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="exp_intermediario" name="nivel_experiencia" value="intermediario">
+                        <label for="exp_intermediario">Intermediário (Já desenvolve pequenos projetos ou sites)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="exp_avancado" name="nivel_experiencia" value="avancado">
+                        <label for="exp_avancado">Avançado (Experiência profissional ou projetos complexos)</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF18 e RF19: Tempo de Experiência e Sistema Operacional -->
+                <fieldset>
+                    <legend>Experiência e Ambiente Computacional</legend>
+                    <!-- RF18: Tempo de experiência -->
+                    <p>
+                        <label for="tempo_experiencia">Tempo aproximado de envolvimento com computação/tecnologia (em anos, de 0 a 10):</label><br>
+                        <input type="range" id="tempo_experiencia" name="tempo_experiencia" min="0" max="10" step="1" value="2">
+                        <br>
+                        <small>Escala: 0 anos (iniciando agora) até 10+ anos (veterano)</small>
+                    </p>
+
+                    <!-- RF19: Sistema Operacional (Mínimo 4 opções) -->
+                    <p>
+                        <label for="sistema_operacional">Qual é o seu Sistema Operacional preferido de trabalho?</label><br>
+                        <select id="sistema_operacional" name="sistema_operacional" required>
+                            <option value="">Selecione seu sistema...</option>
+                            <option value="linux" selected>Linux (Ubuntu, Debian, Fedora, Arch, etc.)</option>
+                            <option value="windows">Microsoft Windows (10, 11)</option>
+                            <option value="macos">Apple macOS</option>
+                            <option value="outro">Outro Sistema Operacional (BSD, etc.)</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF20: Origem da Divulgação (Mínimo 4 opções) -->
+                <fieldset>
+                    <legend>Origem da Divulgação</legend>
+                    <p>Como você tomou conhecimento do Tech Challenge 2026&trade;?</p>
+                    <p>
+                        <input type="radio" id="origem_professores" name="origem_divulgacao" value="professores" checked>
+                        <label for="origem_professores">Aviso de Professores em sala de aula ou Murais do IFCE</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="origem_redes" name="origem_divulgacao" value="redes_sociais">
+                        <label for="origem_redes">Redes Sociais Institucionais (Instagram, LinkedIn ou YouTube)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="origem_colegas" name="origem_divulgacao" value="colegas">
+                        <label for="origem_colegas">Indicação de Colegas, Amigos ou Grêmio Estudantil</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="origem_cartazes" name="origem_divulgacao" value="cartazes">
+                        <label for="origem_cartazes">Banners físicos, Faixas ou Cartazes pelo Campus Maracanaú</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF21: Informações Adicionais (textarea rows=5 cols=50) -->
+                <fieldset>
+                    <legend>Informações Adicionais</legend>
+                    <p>
+                        <label for="justificativa">Justifique seu interesse no evento e compartilhe suas principais expectativas:</label><br>
+                        <textarea id="justificativa" name="justificativa" rows="5" cols="50" placeholder="Descreva brevemente o que você espera aprender e desenvolver durante o Tech Challenge 2026..."></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF22: Autorizações e Declarações (3 checkboxes independentes) -->
+                <fieldset>
+                    <legend>Autorizações e Declarações</legend>
+                    <p>
+                        <input type="checkbox" id="aceite_regras" name="aceite_regras" required>
+                        <label for="aceite_regras"><strong>(Obrigatório)</strong> Declaro que li e aceito integralmente todas as normas e regulamentos do evento.</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="autorizacao_imagem" name="autorizacao_imagem">
+                        <label for="autorizacao_imagem">Autorizo a captura e uso gratuito da minha imagem e voz para fins estritamente pedagógicos e de divulgação institucional do IFCE.</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="receber_novidades" name="receber_novidades">
+                        <label for="receber_novidades">Desejo receber por e-mail convites, boletins informativos e novidades sobre futuros eventos e cursos promovidos pelo IFCE.</label>
+                    </p>
+
+                    <!-- RF26: Link destacado para o Termo de Participação -->
+                    <p>
+                        <em>Atenção:</em> Para detalhes sobre direitos, deveres e privacidade, 
+                        <a href="#termo">consulte o Termo de Participação</a> completo ao final desta página.
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- RF23: Botões de Finalização (Submit e Reset) -->
+                <p>
+                    <input type="submit" value="Realizar Inscrição no Tech Challenge">
+                    <input type="reset" value="Limpar Todos os Campos">
+                </p>
+
+            </form>
+
+            <!-- Link de retorno ao topo -->
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== SEÇÃO 6: INFORMAÇÕES IMPORTANTES (RF24) ==================== -->
+        <section id="informacoes">
+            <h2>Informações Importantes aos Participantes</h2>
+
+            <article>
+                <h3>Prazos e Vagas</h3>
+                <p>
+                    O período oficial de inscrições permanecerá aberto até o dia <strong>10 de Outubro de 2026</strong> ou até o esgotamento da capacidade física dos auditórios e laboratórios. O preenchimento das vagas das oficinas práticas é estritamente por ordem de envio do formulário eletrônico.
+                </p>
+            </article>
+
+            <article>
+                <h3>Credenciamento e Documentação Exigida</h3>
+                <p>
+                    O credenciamento presencial terá início pontualmente às <strong>07:30</strong> no saguão principal do IFCE Campus Maracanaú no dia 15 de Outubro. É obrigatório apresentar:
+                </p>
+                <ul>
+                    <li>Documento oficial com foto (RG, CNH, Carteira de Trabalho ou Passaporte).</li>
+                    <li>Comprovante de matrícula regular (exclusivo para participantes que se inscreveram na categoria Estudante).</li>
+                    <li>Comprovante de inscrição emitido eletronicamente após a submissão deste formulário.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Regras de Conduta e Uso dos Laboratórios</h3>
+                <p>
+                    Durante a utilização dos laboratórios de informática, não é permitido o consumo de alimentos ou bebidas próximas aos computadores. Os participantes são encorajados a trazerem seus próprios dispositivos móveis ou notebooks, caso desejem participar do Hackathon com suas próprias configurações de desenvolvimento.
+                </p>
+            </article>
+
+            <article>
+                <h3>Canal de Atendimento e Dúvidas</h3>
+                <p>
+                    Para esclarecimento de dúvidas adicionais, solicitação de condições de acessibilidade ou suporte durante a inscrição, envie uma mensagem para a coordenação através do e-mail oficial: 
+                    <a href="mailto:techchallenge@maracanau.ifce.edu.br">techchallenge@maracanau.ifce.edu.br</a>.
+                </p>
+            </article>
+
+            <!-- Link de retorno ao topo -->
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </section>
+
+        <hr>
+
+        <!-- ==================== SEÇÃO 7: TERMO DE PARTICIPAÇÃO (RF25, RF26) ==================== -->
+        <section id="termo">
+            <h2>Termo de Participação, Conduta e Responsabilidade</h2>
+
+            <p>
+                Este documento estabelece os termos e condições vinculantes para a participação no evento <strong>Tech Challenge 2026&trade;</strong>, promovido pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú. Ao submeter a inscrição, o participante expressa sua inequívoca concordância com as cláusulas a seguir descritas.
+            </p>
+
+            <h3>Cláusula 1&ordf; &ndash; Do Objeto e Natureza Acadêmica</h3>
+            <p>
+                O Tech Challenge tem finalidade estritamente pedagógica, cultural e científica, não possuindo quaisquer fins lucrativos ou comerciais. As atividades promovidas destinam-se ao fomento da educação técnica e tecnológica na área de Informática e Telemática.
+            </p>
+
+            <h3>Cláusula 2&ordf; &ndash; Dos Direitos e Responsabilidades do Participante</h3>
+            <p>O participante regularmente inscrito terá direito a:</p>
+            <ul>
+                <li>Participar de todas as palestras abertas e conferências plenárias programadas.</li>
+                <li>Concorrer às premiações das competições e hackathons, desde que atendidos os regulamentos específicos de cada prova.</li>
+                <li>Acesso à infraestrutura de rede e laboratórios disponibilizados para as oficinas cadastradas.</li>
+                <li>Recebimento de Certificado Digital de Participação de 20 horas de atividades complementares, condicionado à presença mínima de 75% apurada em lista de frequência oficial.</li>
+            </ul>
+
+            <p>Constituem deveres fundamentais de todo participante:</p>
+            <ol>
+                <li>Manter postura ética, colaborativa e respeitosa perante colegas, professores, monitores, palestrantes e funcionários do campus.</li>
+                <li>Não praticar atos de discriminação, assédio, violência verbal ou física, sob pena de expulsão sumária do evento e responsabilização administrativa.</li>
+                <li>Preservar a integridade física de equipamentos, cabos de rede, mobiliário e instalações prediais do IFCE.</li>
+                <li>Utilizar a rede cabeada e Wi-Fi institucional em conformidade com as diretrizes do Comitê Gestor da Internet no Brasil e com a legislação federal vigente.</li>
+            </ol>
+
+            <h3>Cláusula 3&ordf; &ndash; Da Proteção de Dados e Privacidade (LGPD)</h3>
+            <p>
+                Em conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais</strong> 
+                (<a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener noreferrer">Lei Federal n&ordm; 13.709/2018</a>), 
+                o IFCE Campus Maracanaú assegura que as informações coletadas no formulário de inscrição serão utilizadas exclusivamente para fins de organização interna do evento, controle de presença e emissão dos certificados acadêmicos, sendo vedado o repasse a terceiros para finalidades comerciais.
+            </p>
+
+            <h3>Cláusula 4&ordf; &ndash; Do Uso de Imagem e Voz</h3>
+            <p>
+                As sessões do evento poderão ser fotografadas e filmadas para elaboração de relatórios acadêmicos e divulgação institucional nas mídias oficiais do 
+                <a href="https://ifce.edu.br" target="_blank" rel="noopener noreferrer">IFCE</a>. O participante que assinalar a autorização facultativa correspondente no formulário concorda com essa veiculação a título gratuito.
+            </p>
+
+            <!-- RF26: Link de retorno imediato ao Formulário de Inscrição -->
+            <p>
+                <strong>Retorno:</strong> 
+                <a href="#inscricao">&uarr; Retornar ao Formulário de Inscrição</a>
+            </p>
+
+            <!-- Link de retorno ao topo -->
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ==================== RODAPÉ INSTITUCIONAL ==================== -->
+    <footer>
+        <p>
+            <strong>Tech Challenge 2026&trade;</strong> &ndash; Trabalho Acadêmico 3 de Programação Web I.<br>
+            <strong>Instituição:</strong> Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) &ndash; Campus Maracanaú.<br>
+            <strong>Endereço:</strong> Av. Contorno Norte, 10 &ndash; Distrito Industrial I, Maracanaú - CE, CEP: 61939-140.<br>
+            <strong>Telefone:</strong> (85) 3878-6300 &bull; <strong>E-mail:</strong> <a href="mailto:contato.maracanau@ifce.edu.br">contato.maracanau@ifce.edu.br</a>
+        </p>
+
+        <p>
+            <strong>Orientador da Disciplina:</strong> Prof. Daniel Ferreira &bull; 
+            <strong>Desenvolvido por:</strong> Aluno do Curso de Informática &bull; 
+            Padrões Semânticos <a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">W3C HTML5 Puro</a>.
+        </p>
+
+        <p>
+            <small>&copy; 2026 IFCE Campus Maracanaú. Todos os direitos reservados. Projeto estritamente acadêmico sem fins comerciais.</small>
+        </p>
+
+        <p><a href="#inicio">&uarr; Voltar ao topo da página</a></p>
+    </footer>
+
+</body>
+</html>
