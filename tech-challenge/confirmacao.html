@@ -7,129 +7,150 @@
 </head>
 <body>
 
-    <!-- ==================== CABEÇALHO DA PÁGINA DE CONFIRMAÇÃO ==================== -->
-    <header>
-        <h1>Tech Challenge 2026&trade;</h1>
-        <h2>Comprovante Eletrônico de Inscrição Acadêmica</h2>
-        <nav aria-label="Navegação Secundária">
+    <!-- ATALHO DE ACESSIBILIDADE -->
+    <a href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <hr>
+
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header id="inicio">
+        
+        <!-- BARRA DE NAVEGAÇÃO ENTRE ABAS -->
+        <nav aria-label="Navegação entre páginas">
             <p>
-                <a href="index.html">&larr; Retornar à Página Principal</a> &bull; 
-                <a href="palestrantes.html">Ver Palestrantes</a> &bull; 
-                <a href="faq.html">Dúvidas Frequentes (FAQ)</a>
+                [ <a href="index.html">Início</a> ] | 
+                [ <a href="palestrantes.html">Palestrantes</a> ] | 
+                [ <a href="faq.html">Dúvidas Frequentes (FAQ)</a> ] | 
+                [ <strong aria-current="page">Confirmação de Inscrição</strong> ]
             </p>
         </nav>
+
+        <hr>
+
+        <h1>Tech Challenge 2026&trade;</h1>
+        <h2>Comprovante de Inscrição Eletrônica e Orientações aos Participantes</h2>
+        <p>
+            <strong>Local do Evento:</strong> IFCE Campus Maracanaú &bull; 
+            <strong>Data:</strong> 15 a 17 de Outubro de 2026
+        </p>
     </header>
 
     <hr>
 
-    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
-    <main>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="conteudo-principal">
+        
         <section id="sucesso">
-            <h2>Parabéns! Sua Inscrição foi Enviada com Sucesso!</h2>
-            
+            <h2>Sua Inscrição foi Confirmada com Sucesso!</h2>
             <p>
-                Agradecemos o seu interesse em participar do <strong>Tech Challenge 2026&trade;</strong> no IFCE Campus Maracanaú. Seus dados foram transmitidos e registrados em nossa base de dados acadêmica.
+                Parabéns! Sua solicitação de participação no <strong>Tech Challenge 2026&trade;</strong> com as lendas da computação foi processada e sua vaga prévia está garantida no IFCE Campus Maracanaú.
             </p>
 
-            <!-- Tabela Informativa do Protocolo de Confirmação -->
+            <!-- Tabela de Protocolo e Resumo da Inscrição -->
             <table border="1" cellpadding="8" cellspacing="0">
-                <caption>Resumo da Solicitação de Inscrição</caption>
+                <caption>Resumo Oficial da Solicitação de Inscrição</caption>
                 <thead>
                     <tr>
-                        <th>Item</th>
-                        <th>Informação do Registro</th>
+                        <th scope="col">Parâmetro</th>
+                        <th scope="col">Informações Registradas</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Status da Solicitação</strong></td>
-                        <td>Inscrição Confirmada &ndash; Vaga Assegurada</td>
+                        <td><strong>Situação da Inscrição:</strong></td>
+                        <td>Vaga Homologada com Sucesso (Gratuito)</td>
                     </tr>
                     <tr>
-                        <td><strong>Evento</strong></td>
-                        <td>Tech Challenge 2026&trade; (3&ordm; Encontro Anual de Tecnologia)</td>
+                        <td><strong>Evento:</strong></td>
+                        <td>Tech Challenge 2026&trade; &ndash; 3&ordm; Encontro Anual de Tecnologia</td>
                     </tr>
                     <tr>
-                        <td><strong>Local de Realização</strong></td>
+                        <td><strong>Local:</strong></td>
                         <td>Auditório Central e Laboratórios do IFCE &ndash; Campus Maracanaú</td>
                     </tr>
                     <tr>
-                        <td><strong>Período</strong></td>
-                        <td>15 a 17 de Outubro de 2026</td>
+                        <td><strong>Período:</strong></td>
+                        <td>15 a 17 de Outubro de 2026 &bull; Abertura às 08:00</td>
                     </tr>
                     <tr>
-                        <td><strong>Carga Horária Total</strong></td>
-                        <td>20 horas de atividades acadêmicas complementares certificadas</td>
+                        <td><strong>Carga Horária Válida:</strong></td>
+                        <td>20 horas de atividades complementares certificadas</td>
                     </tr>
                 </tbody>
             </table>
 
             <br>
 
-            <!-- Orientações para os dias do evento -->
+            <!-- Orientações para os Dias do Evento -->
             <article>
-                <h3>Orientações Gerais para os Dias do Evento</h3>
+                <h3>Orientações Importantes para os Dias do Evento</h3>
                 <p>
-                    Para garantir que sua experiência durante o Tech Challenge seja a mais produtiva e agradável possível, observe com atenção os pontos a seguir:
+                    Para garantir que sua presença seja produtiva e segura, observe as orientações da coordenação:
                 </p>
                 <ul>
-                    <li><strong>Horário de Chegada:</strong> O credenciamento iniciará pontualmente às 07:30 da manhã no primeiro dia (15/10). Recomendamos chegar com pelo menos 30 minutos de antecedência para evitar filas.</li>
-                    <li><strong>Documentação Obrigatória:</strong> Traga consigo um documento oficial original com foto (RG, CNH, Passaporte ou Carteira de Trabalho) e comprovante de matrícula caso seja estudante.</li>
-                    <li><strong>Equipamento Pessoal:</strong> Para as atividades de Hackathon e oficinas práticas, é permitido e encorajado o uso de notebook próprio, embora os laboratórios do campus estejam devidamente equipados com estações Linux.</li>
-                    <li><strong>Alimentação e Intervalos:</strong> Teremos estações de coffee break no hall de convivência nos intervalos matutinos e vespertinos. O campus dispõe também de cantina e área de alimentação.</li>
+                    <li><strong>Horário de Abertura e Credenciamento:</strong> Os portões e a bancada de credenciamento estarão abertos a partir das <strong>07:30</strong> no saguão do Auditório Central no dia 15 de Outubro.</li>
+                    <li><strong>Documentos Obrigatórios:</strong> Apresente documento oficial original com foto (RG, CNH, Passaporte ou Carteira de Trabalho). Estudantes devem apresentar comprovante de matrícula regular.</li>
+                    <li><strong>Ambiente de Laboratório:</strong> O campus disponibiliza estações com sistema operacional Linux. Os participantes do Hackathon podem utilizar seus computadores portáteis.</li>
+                    <li><strong>Convivência e Alimentação:</strong> Haverá coffee break gratuito nos intervalos da manhã e da tarde no hall de convivência.</li>
                 </ul>
             </article>
 
-            <!-- Lista Ordenada de Próximos Passos -->
+            <!-- Checklist Semântico de Próximos Passos -->
             <article>
-                <h3>Próximos Passos Obrigatórios</h3>
+                <h3>Checklist Semântico de Próximos Passos</h3>
                 <ol>
-                    <li>Verifique sua caixa de entrada de e-mail (incluindo a pasta de spam ou lixo eletrônico) para conferir a mensagem de boas-vindas com o seu número de identificador único.</li>
-                    <li>Salve uma cópia digital ou imprima este comprovante para agilizar o atendimento na bancada de credenciamento.</li>
-                    <li>Acesse a página de <a href="palestrantes.html">Palestrantes Convidados</a> e conheça os temas das apresentações e a trajetória dos instrutores.</li>
-                    <li>Em caso de dúvidas sobre regulamentos, certificação ou infraestrutura, leia a página de <a href="faq.html">Perguntas Frequentes (FAQ)</a>.</li>
-                    <li>Compareça pontualmente no dia 15 de Outubro de 2026 para a Abertura Oficial no Auditório Central!</li>
+                    <li>Verifique sua caixa postal eletrônica para certificar-se do recebimento do número de protocolo.</li>
+                    <li>Guarde uma cópia digital deste comprovante para apresentação rápida no momento do credenciamento.</li>
+                    <li>Acesse a página de <a href="palestrantes.html">Palestrantes</a> para se aprofundar na biografia dos pioneiros Alan Gaúcho, Turing Stallman Gaúcho, Ada Lovelace, Linus Torvalds, Tim Berners-Lee e no painel especial com Neymar Jr.</li>
+                    <li>Consulte a página de <a href="faq.html">Dúvidas Frequentes (FAQ)</a> para esclarecer dúvidas sobre emissão de certificados, regras dos laboratórios e horários.</li>
+                    <li>Compareça pontualmente no dia 15 de Outubro de 2026 às 08:00 para a Sessão Solene de Abertura Oficial!</li>
                 </ol>
             </article>
 
-            <!-- Suporte e Contato -->
+            <!-- Suporte em Tabela Alinhada -->
             <article>
                 <h3>Canais de Apoio ao Participante</h3>
-                <p>
-                    Caso necessite atualizar qualquer informação cadastral ou solicitar suporte para atendimento especializado de acessibilidade, entre em contato diretamente com a comissão organizadora:
-                </p>
-                <address>
-                    <strong>Coordenação do Tech Challenge 2026</strong><br>
-                    Instituto Federal do Ceará &ndash; Campus Maracanaú<br>
-                    E-mail institucional: <a href="mailto:techchallenge@maracanau.ifce.edu.br">techchallenge@maracanau.ifce.edu.br</a><br>
-                    Telefone: (85) 3878-6300 &bull; Ramal 6320
-                </address>
+                <table border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td align="right" valign="top"><strong>Coordenação:</strong></td>
+                        <td align="left">Comissão Organizadora do Tech Challenge 2026</td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><strong>E-mail Institucional:</strong></td>
+                        <td align="left">
+                            <a href="mailto:techchallenge@maracanau.ifce.edu.br">techchallenge@maracanau.ifce.edu.br</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><strong>Telefone do Campus:</strong></td>
+                        <td align="left">(85) 3878-6300 &bull; Ramal 6320</td>
+                    </tr>
+                </table>
             </article>
 
             <br>
 
-            <!-- Links de Navegação -->
+            <!-- Navegação de Retorno -->
             <nav aria-label="Navegação de Retorno">
                 <p>
-                    <a href="index.html">&larr; Retornar para a Página Inicial do Evento</a> | 
+                    <a href="index.html">&larr; Retornar para a Página Inicial</a> | 
                     <a href="palestrantes.html">Conhecer os Palestrantes Convidados &rarr;</a> | 
-                    <a href="faq.html">Acessar a Central de Dúvidas (FAQ) &rarr;</a>
+                    <a href="faq.html">Consultar Dúvidas no FAQ &rarr;</a>
                 </p>
             </nav>
 
+            <p><a href="#inicio">&uarr; Voltar ao início da página</a></p>
         </section>
+
     </main>
 
-    <hr>
-
-    <!-- ==================== RODAPÉ INSTITUCIONAL ==================== -->
+    <!-- RODAPÉ INSTITUCIONAL PADRÃO -->
     <footer>
-        <p>
-            <strong>Tech Challenge 2026&trade;</strong> &ndash; Programação Web I &bull; Prof. Daniel Ferreira.<br>
-            Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú.<br>
-            <small>&copy; 2026 IFCE. Todos os direitos reservados. Página desenvolvida em HTML5 semântico puro.</small>
-        </p>
-        <p><a href="index.html">&uarr; Voltar para a Home</a></p>
+        <hr>
+        <p>&copy; 2026 Tech Challenge &mdash; IFCE Campus Maracanaú &bull; Todos os direitos reservados.</p>
+        <p><strong>Desenvolvido por:</strong> Cauê Cavalcante Pereira.</p>
+        <p>Disciplina: Programação Web I &bull; Prof. Daniel Ferreira</p>
+        <p><a href="#inicio">&uarr; Voltar ao topo da página</a></p>
     </footer>
 
 </body>

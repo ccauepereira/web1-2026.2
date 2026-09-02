@@ -7,9 +7,26 @@
 </head>
 <body>
 
-    <!-- ==================== CABEÇALHO E NAVEGAÇÃO PRINCIPAL (RF01, RF02) ==================== -->
+    <!-- ATALHO DE ACESSIBILIDADE -->
+    <a href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <hr>
+
+    <!-- CABEÇALHO E NAVEGAÇÃO PRINCIPAL (RF01, RF02) -->
     <header id="inicio">
-        <!-- RF01: Identificação do evento e subtítulo descritivo -->
+        
+        <!-- 1. BARRA SUPERIOR DE ABAS DO SITE -->
+        <nav aria-label="Navegação entre páginas">
+            <p>
+                [ <strong aria-current="page">Início (Página Atual)</strong> ] | 
+                [ <a href="palestrantes.html">Palestrantes</a> ] | 
+                [ <a href="faq.html">Dúvidas Frequentes (FAQ)</a> ]
+            </p>
+        </nav>
+
+        <hr>
+
+        <!-- IDENTIFICAÇÃO DO EVENTO (RF01) -->
         <h1>Tech Challenge 2026&trade;</h1>
         <h2>3&ordm; Encontro Anual de Tecnologia, Padrões Web e Desenvolvimento de Software</h2>
         <p>
@@ -18,57 +35,75 @@
             <strong>Modalidade:</strong> Presencial
         </p>
 
-        <hr>
-
-        <!-- RF02: Menu de navegação interna e links complementares -->
-        <nav aria-label="Navegação Principal do Evento">
-            <h3>Menu de Navegação</h3>
-            <ul>
-                <li><a href="#sobre">Sobre o Evento</a></li>
-                <li><a href="#multimidia">Recursos Multimídia</a></li>
-                <li><a href="#programacao">Programação</a></li>
-                <li><a href="#atividades">Atividades</a></li>
-                <li><a href="#inscricao">Inscrição</a></li>
-                <li><a href="#informacoes">Informações Importantes</a></li>
-                <li><a href="#termo">Termo de Participação</a></li>
-                <li><a href="palestrantes.html">Palestrantes Convidados</a></li>
-                <li><a href="faq.html">Perguntas Frequentes (FAQ)</a></li>
-            </ul>
+        <!-- 2. BARRA DE NAVEGAÇÃO NAS SEÇÕES INTERNAS DA PÁGINA (RF02) -->
+        <nav aria-label="Navegação nas seções desta página">
+            <p>
+                <strong>Navegação Interna:</strong> 
+                <a href="#sobre">Sobre o Evento</a> &bull; 
+                <a href="#multimidia">Recursos Multimídia</a> &bull; 
+                <a href="#programacao">Programação</a> &bull; 
+                <a href="#atividades">Atividades</a> &bull; 
+                <a href="#inscricao">Inscrição</a> &bull; 
+                <a href="#informacoes">Informações Importantes</a> &bull; 
+                <a href="#termo">Termo de Participação</a>
+            </p>
         </nav>
+
     </header>
 
     <hr>
 
-    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
-    <main>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="conteudo-principal">
 
         <!-- ==================== SEÇÃO 1: SOBRE O EVENTO (RF01, RF03, RF04, RF08) ==================== -->
         <section id="sobre">
             <h2>Sobre o Tech Challenge 2026&trade;</h2>
 
             <p>
-                O <strong>Tech Challenge 2026&trade;</strong> é o evento acadêmico de tecnologia mais aguardado do Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú. Idealizado e promovido no âmbito da disciplina de <em>Programação Web I</em>, sob a coordenação do <strong>Prof. Daniel Ferreira</strong>, o evento visa integrar a comunidade acadêmica de Informática, Telemática e Engenharia da Computação em torno dos pilares contemporâneos da tecnologia da informação.
+                O <strong>Tech Challenge 2026&trade;</strong> é o evento acadêmico de tecnologia de maior prestígio do Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú. Idealizado e promovido no âmbito da disciplina de <em>Programação Web I</em>, sob a coordenação do <strong>Prof. Daniel Ferreira</strong>, o evento visa integrar a comunidade acadêmica de Informática, Telemática e Engenharia em torno dos pilares teóricos e práticos da computação universal.
             </p>
 
             <p>
-                Durante três dias imersivos, estudantes, pesquisadores e profissionais de mercado reúnem-se para compartilhar conhecimento sobre <strong>padrões web abertos</strong>, arquiteturas escaláveis, inteligência artificial e boas práticas de acessibilidade digital. O Tech Challenge consolida-se como um laboratório vivo de inovação &amp; criatividade, incentivando o desenvolvimento colaborativo por meio de hackathons, palestras magnas e oficinas técnicas orientadas a desafios reais da sociedade.
+                Nesta edição especial, reunimos as mentes mais brilhantes e influentes da história da computação: Alan Gaúcho (Alan Turing), Turing Stallman Gaúcho, Ada Lovelace, Linus Torvalds, Tim Berners-Lee e o encerramento magistral com Neymar Jr debatendo performance e controle em tempo real. O evento celebra o poder transformador do código aberto, a interoperabilidade dos padrões W3C e a acessibilidade digital para todos os cidadãos.
             </p>
 
-            <!-- RF03: Imagem representativa com figure, figcaption, alt e link clicável para o IFCE -->
+            <!-- RF03: Banner principal atualizado para imagens/Banner.jpeg com figure, figcaption, alt e link do IFCE -->
             <figure>
                 <a href="https://ifce.edu.br" target="_blank" rel="noopener noreferrer">
-                    <img src="imagens/evento.jpg" alt="Fachada do IFCE Campus Maracanaú com logotipo oficial do Tech Challenge 2026" width="600">
+                    <img src="imagens/Banner.jpeg" alt="Banner Oficial do Tech Challenge 2026 - IFCE Campus Maracanaú" width="600">
                 </a>
                 <figcaption>
-                    Figura 1: Painel institucional do Tech Challenge 2026&trade; no IFCE Campus Maracanaú &bull; Clique na imagem para visitar o portal oficial do IFCE (&rarr;).
+                    Banner oficial do Tech Challenge 2026&trade; no IFCE Campus Maracanaú. Clique na imagem para acessar o portal institucional do IFCE (&rarr;).
                 </figcaption>
             </figure>
 
+            <!-- Componentes Nativos de Progresso e Ocupação (HTML5 Puro) -->
+            <fieldset>
+                <legend><strong>Status de Ocupação e Capacidade dos Ambientes</strong></legend>
+                <table border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td align="right"><strong>Taxa de Ocupação dos Auditórios:</strong></td>
+                        <td align="left">
+                            <progress value="82" max="100">82%</progress>
+                            <span>82% das vagas preenchidas</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><strong>Lotação das Oficinas Práticas de Laboratório:</strong></td>
+                        <td align="left">
+                            <meter min="0" max="100" value="75">75%</meter>
+                            <span>75% da capacidade máxima atingida</span>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
             <!-- RF04: Links externos com target="_blank" -->
             <p>
-                Para mais detalhes sobre as instalações e projetos de pesquisa do campus, acesse o 
+                Para mais informações sobre as instalações e projetos de pesquisa do campus, acesse o 
                 <a href="https://ifce.edu.br" target="_blank" rel="noopener noreferrer">Portal Oficial do IFCE</a>. 
-                Para conhecer as recomendações internacionais sobre a estruturação de documentos na web, consulte as diretrizes do 
+                Para conhecer as diretrizes mundiais de interoperabilidade da rede, consulte as recomendações do 
                 <a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">World Wide Web Consortium (W3C)</a>.
             </p>
 
@@ -82,23 +117,24 @@
         <section id="multimidia">
             <h2>Recursos Multimídia</h2>
 
-            <!-- RF09: Vídeo promocional com controls, width e fallback -->
+            <!-- RF09: Vídeo promocional utilizando videotech.mp4 -->
             <article>
                 <h3>Vídeo Oficial de Apresentação</h3>
-                <p>Confira o vídeo de divulgação com os destaques das edições anteriores e o que esperar do Tech Challenge 2026&trade;:</p>
+                <p>Assista ao vídeo de introdução e descubra os detalhes da programação do Tech Challenge 2026&trade;:</p>
                 <video controls width="500">
-                    <source src="video/apresentacao.mp4" type="video/mp4">
-                    Seu navegador não suporta a tag de vídeo HTML5. Você pode <a href="video/apresentacao.mp4" download>baixar o arquivo de vídeo MP4 aqui</a>.
+                    <source src="video/videotech.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo HTML5. Você pode <a href="video/videotech.mp4" download>baixar o arquivo de vídeo MP4 aqui</a>.
                 </video>
             </article>
 
-            <!-- RF10: Áudio de boas-vindas com controls e fallback -->
+            <!-- RF10: Áudio de boas-vindas atualizado com áudio audio/audio.mp4 -->
             <article>
                 <h3>Mensagem de Boas-Vindas da Coordenação (Áudio)</h3>
-                <p>Ouça o recado especial da comissão organizadora para todos os participantes inscritos:</p>
+                <p>Ouça as instruções e a mensagem da comissão organizadora para todos os participantes inscritos:</p>
                 <audio controls>
-                    <source src="audio/boas-vindas.mp3" type="audio/mpeg">
-                    Seu navegador não suporta o elemento de áudio HTML5. Você pode <a href="audio/boas-vindas.mp3" download>baixar o arquivo de áudio MP3 aqui</a>.
+                    <source src="audio/audio.mp4" type="audio/mp4">
+                    <source src="audio/audio.mp4" type="audio/mpeg">
+                    Seu navegador não suporta a reprodução de áudio.
                 </audio>
             </article>
 
@@ -110,73 +146,82 @@
 
         <!-- ==================== SEÇÃO 3: PROGRAMAÇÃO DO EVENTO (RF05, RF06) ==================== -->
         <section id="programacao">
-            <h2>Programação do Evento</h2>
-            <p>Confira a programação completa distribuída entre os auditórios e laboratórios do Campus Maracanaú:</p>
+            <h2>Programação Geral do Evento</h2>
+            <p>Confira a grade horária completa contemplando as palestras magnas e oficinas das lendas da computação:</p>
 
-            <!-- RF05 e RF06: Tabela formatada nativamente com cabeçalho, pelo menos 8 atividades e mesclagem (colspan/rowspan) -->
-            <table border="1" cellpadding="8" cellspacing="0">
-                <caption>Quadro Geral de Atividades e Horários &ndash; Tech Challenge 2026</caption>
+            <!-- RF05 e RF06: Tabela com border="1" width="100%" cellpadding="8" cellspacing="0" -->
+            <table border="1" width="100%" cellpadding="8" cellspacing="0">
+                <caption>Grade de Horários e Atividades &ndash; Tech Challenge 2026</caption>
                 <thead>
                     <tr>
-                        <th>Horário</th>
-                        <th>Atividade</th>
-                        <th>Local</th>
-                        <th>Responsável</th>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Atividade</th>
+                        <th scope="col">Local</th>
+                        <th scope="col">Responsável</th>
                     </tr>
                 </thead>
                 <tbody>
                     <!-- 1. Abertura Oficial -->
                     <tr>
-                        <td>08:00 &ndash; 09:00</td>
+                        <td align="center">08:00 &ndash; 09:00</td>
                         <td>Sessão Solene de Abertura Oficial e Credenciamento</td>
                         <td>Auditório Central</td>
-                        <td>Direção do IFCE &amp; Coordenação de Telemática</td>
+                        <td>Direção do IFCE &bull; Prof. Daniel Ferreira</td>
                     </tr>
-                    <!-- 2. Palestra Magna -->
+                    <!-- 2. Palestra Magna: Ada Lovelace -->
                     <tr>
-                        <td>09:00 &ndash; 10:30</td>
-                        <td>Palestra Magna: "O Futuro da Inteligência Artificial e da Web Aberta"</td>
+                        <td align="center">09:00 &ndash; 10:30</td>
+                        <td>Palestra Magna: "A Origem dos Algoritmos e Programação Pioneira"</td>
                         <td>Auditório Central</td>
-                        <td>Dra. Helena Vasconcelos</td>
+                        <td>Ada Lovelace (Pioneira da Programação)</td>
                     </tr>
-                    <!-- 3. Intervalo / Coffee Break com mesclagem colspan="3" (RF06) -->
+                    <!-- 3. Intervalo / Coffee Break com colspan="3" align="center" (RF06) -->
                     <tr>
-                        <td>10:30 &ndash; 11:00</td>
-                        <td colspan="3"><strong>Intervalo Institucional &bull; Coffee Break e Network no Hall de Convivência</strong></td>
+                        <td align="center">10:30 &ndash; 11:00</td>
+                        <td colspan="3" align="center">
+                            <strong>Intervalo Institucional &bull; Coffee Break e Confraternização no Hall</strong>
+                        </td>
                     </tr>
-                    <!-- 4. Mesa Redonda -->
+                    <!-- 4. Palestra Magna: Alan Gaúcho / Alan Turing -->
                     <tr>
-                        <td>11:00 &ndash; 12:30</td>
-                        <td>Mesa Redonda: "Desafios Éticos e Padrões W3C na Era da Computação Ubíqua"</td>
+                        <td align="center">11:00 &ndash; 12:30</td>
+                        <td>Palestra Magna: "Fundamentos da Teoria da Computação e Algoritmos Clássicos"</td>
                         <td>Auditório Central</td>
-                        <td>Prof. Carlos Eduardo e Pesquisadores Convidados</td>
+                        <td>Alan Gaúcho / Alan Turing</td>
                     </tr>
-                    <!-- 5. Oficina Técnica com rowspan="2" no horário estendido de práticas (RF06) -->
+                    <!-- 5. Oficina Técnica: Linus Torvalds com rowspan="2" (RF06) -->
                     <tr>
-                        <td rowspan="2">14:00 &ndash; 17:30</td>
-                        <td>Oficina Técnica: "Construção de Documentos Semânticos e Acessíveis em HTML5 Puro"</td>
-                        <td>Laboratório de Informática 01</td>
-                        <td>Prof. Daniel Ferreira</td>
+                        <td rowspan="2" align="center">14:00 &ndash; 16:30</td>
+                        <td>Oficina Técnica: "Arquitetura do Kernel Linux e Controle de Versão com Git"</td>
+                        <td>Laboratório de Sistemas 01</td>
+                        <td>Linus Torvalds (Criador do Linux e do Git)</td>
                     </tr>
-                    <!-- 6. Atividade Prática de Laboratório (paralela no mesmo bloco da tarde) -->
+                    <!-- 6. Palestra e Prática: Tim Berners-Lee -->
                     <tr>
-                        <td>Atividade Prática de Laboratório: "Cibersegurança Defensiva e Análise de Tráfego de Redes"</td>
+                        <td>Palestra e Prática: "A Criação da World Wide Web e a Semântica do HTML"</td>
                         <td>Laboratório de Redes 02</td>
-                        <td>Eng. Sofia Mendes</td>
+                        <td>Tim Berners-Lee (Criador da World Wide Web e W3C)</td>
                     </tr>
-                    <!-- 7. Competição / Hackathon -->
+                    <!-- 7. Mesa Redonda: Turing Stallman Gaúcho -->
                     <tr>
-                        <td>18:00 &ndash; 21:00</td>
-                        <td>Competição / Hackathon: "Desafio de Desenvolvimento de Soluções com Software Livre"</td>
-                        <td>Espaço de Inovação Aberta</td>
-                        <td>Msc. Lucas Pinheiro &amp; Comissão Julgadora</td>
-                    </tr>
-                    <!-- 8. Premiação e Encerramento -->
-                    <tr>
-                        <td>21:00 &ndash; 22:00</td>
-                        <td>Premiação dos Vencedores do Hackathon e Sessão de Encerramento</td>
+                        <td align="center">16:30 &ndash; 18:00</td>
+                        <td>Mesa Redonda: "A Filosofia GNU, Software Livre e a Liberdade do Usuário na Web"</td>
                         <td>Auditório Central</td>
-                        <td>Comissão Organizadora do IFCE</td>
+                        <td>Turing Stallman Gaúcho &bull; Movimento Software Livre</td>
+                    </tr>
+                    <!-- 8. Competição / Hackathon -->
+                    <tr>
+                        <td align="center">18:00 &ndash; 20:30</td>
+                        <td>Competição / Hackathon: "Desafio de Código Limpo e Alta Performance"</td>
+                        <td>Espaço de Inovação Aberta</td>
+                        <td>Bancada de Especialistas e Juízes do IFCE</td>
+                    </tr>
+                    <!-- 9. Painel Especial de Encerramento: Neymar Jr -->
+                    <tr>
+                        <td align="center">20:30 &ndash; 22:00</td>
+                        <td>Painel Especial: "Dribles Lógicos, Otimização de Performance e Controle de Bola em Tempo Real" &bull; Cerimônia de Premiação</td>
+                        <td>Auditório Central</td>
+                        <td>Neymar Jr ("Neymar Jr pai da ciencia da computação")</td>
                     </tr>
                 </tbody>
             </table>
@@ -191,32 +236,47 @@
         <section id="atividades">
             <h2>Atividades do Evento</h2>
 
+            <!-- Bloco de Destaque com blockquote -->
+            <blockquote>
+                <em>"A compreensão da computação nasce do estudo rigoroso dos seus pioneiros e floresce quando aplicada na resolução de desafios reais com criatividade e velocidade de execução."</em><br>
+                &ndash; <strong>Coordenação Acadêmica do Tech Challenge 2026</strong>
+            </blockquote>
+
             <!-- Competições -->
-            <h3>Competições Acadêmicas e Tecnológicas</h3>
+            <h3>Competições Acadêmicas</h3>
             <ul>
-                <li><strong>Hackathon de Inovação Aberta:</strong> Maratona contínua de prototipagem de soluções tecnológicas voltadas para sustentabilidade e educação pública.</li>
-                <li><strong>Maratona de Programação:</strong> Competição de resolução rápida de problemas algorítmicos complexos em equipe.</li>
-                <li><strong>Capture The Flag (CTF):</strong> Competição no estilo desafio de segurança da informação, explorando criptografia, redes e engenharia reversa.</li>
+                <li><strong>Hackathon de Inovação Aberta:</strong> Maratona contínua de criação de sistemas eficientes e sustentáveis.</li>
+                <li><strong>Maratona de Programação e Algoritmos:</strong> Resolução rápida de problemas lógicos de alta complexidade.</li>
+                <li><strong>Capture The Flag (CTF) de Segurança:</strong> Desafios de criptoanálise e segurança inspirados nos métodos de Alan Turing.</li>
             </ul>
 
             <!-- Oficinas Temáticas (mínimo 4 opções) -->
-            <h3>Oficinas Temáticas</h3>
+            <h3>Oficinas Temáticas Práticas</h3>
             <ul>
-                <li><strong>Oficina 1:</strong> Desenvolvimento Web Semântico e Acessibilidade em Padrões W3C.</li>
-                <li><strong>Oficina 2:</strong> Fundamentos de Inteligência Artificial e Engenharia de Prompts com Modelos de Linguagem.</li>
-                <li><strong>Oficina 3:</strong> Práticas Avançadas de Cibersegurança e Defesa de Redes Corporativas.</li>
-                <li><strong>Oficina 4:</strong> Modelagem, Otimização e Segurança em Bancos de Dados Relacionais.</li>
+                <li><strong>Oficina 1 (Linus Torvalds):</strong> Arquitetura do Kernel Linux e Controle de Versão com Git.</li>
+                <li><strong>Oficina 2 (Tim Berners-Lee):</strong> A Criação da World Wide Web e a Semântica do HTML.</li>
+                <li><strong>Oficina 3 (Ada Lovelace):</strong> A Origem dos Algoritmos e Programação Pioneira.</li>
+                <li><strong>Oficina 4 (Alan Gaúcho / Alan Turing):</strong> Fundamentos da Teoria da Computação e Algoritmos Clássicos.</li>
+                <li><strong>Oficina 5 (Turing Stallman Gaúcho):</strong> A Filosofia GNU, Software Livre e a Liberdade do Usuário na Web.</li>
             </ul>
 
             <!-- Regras de Participação (mínimo 5 itens numerados) -->
             <h3>Regras Gerais de Participação</h3>
             <ol>
-                <li>A inscrição prévia e individual por meio do formulário oficial desta página é obrigatória para todos os participantes.</li>
-                <li>No primeiro dia do evento, cada participante deve apresentar documento oficial com foto para retirada de crachá e kit de credenciamento.</li>
-                <li>O acesso aos laboratórios de informática e redes é restrito aos inscritos nas respectivas oficinas técnicas.</li>
-                <li>Todos os participantes concordam em zelar pela conservação do patrimônio público e equipamentos laboratoriais do IFCE Campus Maracanaú.</li>
-                <li>Para fazer jus ao Certificado de Participação de 20 horas complementares, o participante deverá registrar presença em no mínimo 75% da carga horária das atividades.</li>
+                <li>A inscrição prévia e individual por meio do formulário eletrônico oficial é estritamente obrigatória.</li>
+                <li>No primeiro dia do evento, cada participante deve apresentar documento oficial com foto para retirada de crachá e credenciamento.</li>
+                <li>O acesso aos laboratórios de informática é restrito aos inscritos nas respectivas oficinas e atividades práticas.</li>
+                <li>Todos os participantes concordam em zelar pela conservação dos equipamentos e patrimônio físico do IFCE Campus Maracanaú.</li>
+                <li>Para fazer jus ao Certificado de Participação de 20 horas complementares, é exigida frequência mínima de 75% apurada em lista oficial.</li>
             </ol>
+
+            <!-- Componente Nativo details / summary para Regulamento Completo -->
+            <details>
+                <summary><strong>Clique aqui para consultar os Critérios de Avaliação do Hackathon</strong></summary>
+                <p>
+                    As soluções apresentadas pelas equipes serão pontuadas segundo quatro critérios fundamentais: (1) originalidade e impacto da ideia; (2) eficiência algorítmica e ausência de dependências proprietárias; (3) acessibilidade semântica da interface do usuário; e (4) domínio técnico e clareza na demonstração diante da banca examinadora.
+                </p>
+            </details>
 
             <!-- Link de retorno ao topo -->
             <p><a href="#inicio">&uarr; Voltar ao início</a></p>
@@ -227,334 +287,393 @@
         <!-- ==================== SEÇÃO 5: FORMULÁRIO DE INSCRIÇÃO (RF11 a RF23, RF26) ==================== -->
         <section id="inscricao">
             <h2>Formulário de Inscrição Oficial</h2>
-            <p>Preencha os dados abaixo com precisão. As inscrições são gratuitas e as vagas nas oficinas são limitadas.</p>
-            
+            <p>Preencha os campos abaixo com precisão para garantir seu acesso às conferências e oficinas:</p>
+
             <!-- RF26: Link destacado navegando para o Termo de Participação -->
             <p>
-                <strong>Importante:</strong> Antes de preencher e submeter o formulário, 
-                <a href="#termo">consulte o Termo de Participação</a> completo.
+                <strong>Importante:</strong> Antes de enviar o formulário, 
+                <a href="#termo">consulte o Termo de Participação</a> detalhado ao final desta página.
             </p>
 
             <form action="confirmacao.html" method="get">
 
-                <!-- RF11: Dados Pessoais -->
+                <!-- RF11: Dados Pessoais Estruturados em Tabela Sem Borda -->
                 <fieldset>
-                    <legend>Dados Pessoais</legend>
-                    <p>
-                        <label for="nome">Nome Completo:</label><br>
-                        <input type="text" id="nome" name="nome" required placeholder="Ex.: Maria de Oliveira Silva" size="50">
-                    </p>
-                    <p>
-                        <label for="nascimento">Data de Nascimento:</label><br>
-                        <input type="date" id="nascimento" name="nascimento" required>
-                    </p>
-                    <p>
-                        <label for="cpf">CPF:</label><br>
-                        <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" size="20">
-                    </p>
-                    <p>
-                        <label for="email">E-mail Institucional ou Pessoal:</label><br>
-                        <input type="email" id="email" name="email" required placeholder="nome@exemplo.com" size="40">
-                    </p>
-                    <p>
-                        <label for="telefone">Telefone / Celular (WhatsApp):</label><br>
-                        <input type="tel" id="telefone" name="telefone" required placeholder="(85) 98888-7777" size="20">
-                    </p>
-                    <p>
-                        <label for="senha">Senha de Acesso ao Portal:</label><br>
-                        <input type="password" id="senha" name="senha" required minlength="6" placeholder="Mínimo de 6 caracteres" size="25">
-                    </p>
+                    <legend><strong>1. Dados Pessoais do Participante</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="nome"><strong>Nome Completo:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="text" id="nome" name="nome" required aria-required="true" placeholder="Ex.: Maria de Oliveira Silva" size="45">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="nascimento"><strong>Data de Nascimento:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="date" id="nascimento" name="nascimento" required aria-required="true">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="cpf"><strong>CPF:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="text" id="cpf" name="cpf" required aria-required="true" placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" size="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="email"><strong>E-mail Institucional ou Pessoal:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="email" id="email" name="email" required aria-required="true" placeholder="nome@exemplo.com" size="40">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="telefone"><strong>Telefone / Celular:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="tel" id="telefone" name="telefone" required aria-required="true" placeholder="(85) 98888-7777" size="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="senha"><strong>Senha de Acesso ao Portal:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="password" id="senha" name="senha" required aria-required="true" minlength="6" placeholder="Mínimo 6 caracteres" size="25">
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
-                <!-- RF12: Endereço -->
+                <!-- RF12: Endereço Residencial Estruturado em Tabela Sem Borda -->
                 <fieldset>
-                    <legend>Endereço Residencial</legend>
-                    <p>
-                        <label for="cep">CEP:</label><br>
-                        <input type="text" id="cep" name="cep" required placeholder="61939-140" size="15">
-                    </p>
-                    <p>
-                        <label for="rua">Logradouro (Rua/Avenida):</label><br>
-                        <input type="text" id="rua" name="rua" required placeholder="Av. Contorno Norte" size="50">
-                    </p>
-                    <p>
-                        <label for="numero">Número:</label><br>
-                        <input type="number" id="numero" name="numero" required min="1" placeholder="10">
-                    </p>
-                    <p>
-                        <label for="complemento">Complemento:</label><br>
-                        <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, Sala" size="30">
-                    </p>
-                    <p>
-                        <label for="bairro">Bairro:</label><br>
-                        <input type="text" id="bairro" name="bairro" required placeholder="Distrito Industrial I" size="40">
-                    </p>
-                    <p>
-                        <label for="cidade">Cidade:</label><br>
-                        <input type="text" id="cidade" name="cidade" required value="Maracanaú" size="30">
-                    </p>
-                    <p>
-                        <label for="estado">Estado (UF):</label><br>
-                        <select id="estado" name="estado" required>
-                            <option value="">Selecione o estado...</option>
-                            <option value="AC">Acre (AC)</option>
-                            <option value="AL">Alagoas (AL)</option>
-                            <option value="AP">Amapá (AP)</option>
-                            <option value="AM">Amazonas (AM)</option>
-                            <option value="BA">Bahia (BA)</option>
-                            <option value="CE" selected>Ceará (CE)</option>
-                            <option value="DF">Distrito Federal (DF)</option>
-                            <option value="ES">Espírito Santo (ES)</option>
-                            <option value="GO">Goiás (GO)</option>
-                            <option value="MA">Maranhão (MA)</option>
-                            <option value="MT">Mato Grosso (MT)</option>
-                            <option value="MS">Mato Grosso do Sul (MS)</option>
-                            <option value="MG">Minas Gerais (MG)</option>
-                            <option value="PA">Pará (PA)</option>
-                            <option value="PB">Paraíba (PB)</option>
-                            <option value="PR">Paraná (PR)</option>
-                            <option value="PE">Pernambuco (PE)</option>
-                            <option value="PI">Piauí (PI)</option>
-                            <option value="RJ">Rio de Janeiro (RJ)</option>
-                            <option value="RN">Rio Grande do Norte (RN)</option>
-                            <option value="RS">Rio Grande do Sul (RS)</option>
-                            <option value="RO">Rondônia (RO)</option>
-                            <option value="RR">Roraima (RR)</option>
-                            <option value="SC">Santa Catarina (SC)</option>
-                            <option value="SP">São Paulo (SP)</option>
-                            <option value="SE">Sergipe (SE)</option>
-                            <option value="TO">Tocantins (TO)</option>
-                        </select>
-                    </p>
+                    <legend><strong>2. Endereço Residencial</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="cep"><strong>CEP:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="text" id="cep" name="cep" required aria-required="true" placeholder="61939-140" size="15">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="rua"><strong>Logradouro (Rua/Avenida):</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="text" id="rua" name="rua" required aria-required="true" placeholder="Av. Contorno Norte" size="45">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="numero"><strong>Número:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="number" id="numero" name="numero" required aria-required="true" min="1" placeholder="10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="complemento"><strong>Complemento:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="text" id="complemento" name="complemento" placeholder="Apto, Bloco, Sala" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="bairro"><strong>Bairro:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="text" id="bairro" name="bairro" required aria-required="true" placeholder="Distrito Industrial I" size="35">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="cidade"><strong>Cidade:</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="text" id="cidade" name="cidade" required aria-required="true" value="Maracanaú" size="30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="estado"><strong>Estado (UF):</strong></label>
+                            </td>
+                            <td align="left">
+                                <select id="estado" name="estado" required aria-required="true">
+                                    <option value="">Selecione o estado...</option>
+                                    <option value="AC">Acre (AC)</option>
+                                    <option value="AL">Alagoas (AL)</option>
+                                    <option value="AP">Amapá (AP)</option>
+                                    <option value="AM">Amazonas (AM)</option>
+                                    <option value="BA">Bahia (BA)</option>
+                                    <option value="CE" selected>Ceará (CE)</option>
+                                    <option value="DF">Distrito Federal (DF)</option>
+                                    <option value="ES">Espírito Santo (ES)</option>
+                                    <option value="GO">Goiás (GO)</option>
+                                    <option value="MA">Maranhão (MA)</option>
+                                    <option value="MT">Mato Grosso (MT)</option>
+                                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                                    <option value="MG">Minas Gerais (MG)</option>
+                                    <option value="PA">Pará (PA)</option>
+                                    <option value="PB">Paraíba (PB)</option>
+                                    <option value="PR">Paraná (PR)</option>
+                                    <option value="PE">Pernambuco (PE)</option>
+                                    <option value="PI">Piauí (PI)</option>
+                                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                                    <option value="RN">Rio Grande do Norte (RN)</option>
+                                    <option value="RS">Rio Grande do Sul (RS)</option>
+                                    <option value="RO">Rondônia (RO)</option>
+                                    <option value="RR">Roraima (RR)</option>
+                                    <option value="SC">Santa Catarina (SC)</option>
+                                    <option value="SP">São Paulo (SP)</option>
+                                    <option value="SE">Sergipe (SE)</option>
+                                    <option value="TO">Tocantins (TO)</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
                 <!-- RF13: Situação do Participante -->
                 <fieldset>
-                    <legend>Situação do Participante</legend>
-                    <p>Selecione seu vínculo ou perfil acadêmico/profissional:</p>
-                    <p>
-                        <input type="radio" id="sit_estudante" name="situacao" value="estudante" checked>
-                        <label for="sit_estudante">Estudante (Ensino Técnico ou Superior)</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="sit_professor" name="situacao" value="professor">
-                        <label for="sit_professor">Professor / Docente</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="sit_profissional" name="situacao" value="profissional">
-                        <label for="sit_profissional">Profissional da área de Tecnologia</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="sit_outro" name="situacao" value="outro">
-                        <label for="sit_outro">Outro perfil</label>
-                    </p>
+                    <legend><strong>3. Situação do Participante</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top"><strong>Vínculo / Perfil:</strong></td>
+                            <td align="left">
+                                <input type="radio" id="sit_estudante" name="situacao" value="estudante" checked>
+                                <label for="sit_estudante">Estudante (Ensino Técnico, Graduação ou Pós-Graduação)</label><br>
+                                <input type="radio" id="sit_professor" name="situacao" value="professor">
+                                <label for="sit_professor">Professor / Docente / Pesquisador</label><br>
+                                <input type="radio" id="sit_profissional" name="situacao" value="profissional">
+                                <label for="sit_profissional">Profissional da área de Tecnologia da Informação</label><br>
+                                <input type="radio" id="sit_outro" name="situacao" value="outro">
+                                <label for="sit_outro">Outro perfil comunitário</label>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
                 <!-- RF14: Áreas de Interesse -->
                 <fieldset>
-                    <legend>Áreas de Interesse</legend>
-                    <p>Marque todas as áreas que despertam seu interesse (seleção múltipla):</p>
-                    <p>
-                        <input type="checkbox" id="int_ia" name="interesses" value="inteligencia_artificial">
-                        <label for="int_ia">Inteligência Artificial &amp; Machine Learning</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="int_web" name="interesses" value="desenvolvimento_web">
-                        <label for="int_web">Desenvolvimento Web e Padrões Semânticos</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="int_redes" name="interesses" value="redes">
-                        <label for="int_redes">Redes de Computadores e Telecomunicações</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="int_seguranca" name="interesses" value="seguranca">
-                        <label for="int_seguranca">Cibersegurança e Privacidade de Dados</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="int_bd" name="interesses" value="banco_dados">
-                        <label for="int_bd">Bancos de Dados e Big Data</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="int_cg" name="interesses" value="computacao_grafica">
-                        <label for="int_cg">Computação Gráfica e Processamento de Imagens</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="int_prog" name="interesses" value="programacao">
-                        <label for="int_prog">Lógica de Programação e Algoritmos Avançados</label>
-                    </p>
+                    <legend><strong>4. Áreas de Interesse</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top"><strong>Selecione seus interesses:</strong></td>
+                            <td align="left">
+                                <input type="checkbox" id="int_ia" name="interesses" value="inteligencia_artificial">
+                                <label for="int_ia">Inteligência Artificial &amp; Teoria da Computação</label><br>
+                                <input type="checkbox" id="int_web" name="interesses" value="desenvolvimento_web">
+                                <label for="int_web">Desenvolvimento Web e Padrões Semânticos W3C</label><br>
+                                <input type="checkbox" id="int_redes" name="interesses" value="redes">
+                                <label for="int_redes">Sistemas Operacionais, Kernel e Redes</label><br>
+                                <input type="checkbox" id="int_seguranca" name="interesses" value="seguranca">
+                                <label for="int_seguranca">Criptografia e Cibersegurança</label><br>
+                                <input type="checkbox" id="int_bd" name="interesses" value="banco_dados">
+                                <label for="int_bd">Bancos de Dados e Processamento em Larga Escala</label><br>
+                                <input type="checkbox" id="int_cg" name="interesses" value="computacao_grafica">
+                                <label for="int_cg">Computação Gráfica e Visão Computacional</label><br>
+                                <input type="checkbox" id="int_prog" name="interesses" value="programacao">
+                                <label for="int_prog">Lógica de Programação e Algoritmos de Alta Performance</label>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
-                <!-- RF15: Escolha de Oficinas Temáticas (Mínimo 4 opções) -->
+                <!-- RF15: Escolha de Oficinas Temáticas com os Mestres -->
                 <fieldset>
-                    <legend>Inscrição em Oficinas Temáticas</legend>
-                    <p>Selecione as oficinas das quais deseja participar (sujeito à lotação das salas):</p>
-                    <p>
-                        <input type="checkbox" id="oficina_html" name="oficinas" value="oficina_html">
-                        <label for="oficina_html">Oficina 1: HTML5 Semântico e Acessibilidade Web (Padrões W3C)</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="oficina_ia" name="oficinas" value="oficina_ia">
-                        <label for="oficina_ia">Oficina 2: Introdução Prática a Modelos de Linguagem e Inteligência Artificial</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="oficina_redes" name="oficinas" value="oficina_redes">
-                        <label for="oficina_redes">Oficina 3: Roteamento Seguro e Arquitetura de Redes TCP/IP</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="oficina_sec" name="oficinas" value="oficina_seguranca">
-                        <label for="oficina_sec">Oficina 4: Fundamentos de Cibersegurança e Testes de Penetração Básicos</label>
-                    </p>
+                    <legend><strong>5. Inscrição em Oficinas Temáticas (Seleção Múltipla)</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top"><strong>Escolha as oficinas:</strong></td>
+                            <td align="left">
+                                <input type="checkbox" id="oficina_linus" name="oficinas" value="oficina_linus">
+                                <label for="oficina_linus">Oficina 1: Arquitetura do Kernel Linux e Controle de Versão com Git &ndash; Linus Torvalds</label><br>
+                                <input type="checkbox" id="oficina_tim" name="oficinas" value="oficina_tim">
+                                <label for="oficina_tim">Oficina 2: A Criação da World Wide Web e a Semântica do HTML &ndash; Tim Berners-Lee</label><br>
+                                <input type="checkbox" id="oficina_ada" name="oficinas" value="oficina_ada">
+                                <label for="oficina_ada">Oficina 3: A Origem dos Algoritmos e Programação Pioneira &ndash; Ada Lovelace</label><br>
+                                <input type="checkbox" id="oficina_alan" name="oficinas" value="oficina_alan">
+                                <label for="oficina_alan">Oficina 4: Fundamentos da Teoria da Computação e Algoritmos Clássicos &ndash; Alan Gaúcho / Alan Turing</label><br>
+                                <input type="checkbox" id="oficina_stallman" name="oficinas" value="oficina_stallman">
+                                <label for="oficina_stallman">Oficina 5: A Filosofia GNU, Software Livre e a Liberdade do Usuário na Web &ndash; Turing Stallman Gaúcho</label>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
-                <!-- RF16: Palestra Principal (Seleção única entre 4 palestras) -->
+                <!-- RF16: Palestra Principal (Seleção única entre as atrações magnas) -->
                 <fieldset>
-                    <legend>Palestra Principal de Abertura</legend>
-                    <p>Escolha qual das palestras principais você assistirá presencialmente no Auditório Central:</p>
-                    <p>
-                        <input type="radio" id="palestra_ia" name="palestra_principal" value="palestra_ia" checked>
-                        <label for="palestra_ia">Palestra 1: "O Futuro da Inteligência Artificial na Educação e Indústria" &ndash; Dra. Helena Vasconcelos</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="palestra_w3c" name="palestra_principal" value="palestra_w3c">
-                        <label for="palestra_w3c">Palestra 2: "Evolução dos Padrões Abertos da W3C para uma Web Universal" &ndash; Prof. Carlos Eduardo</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="palestra_sec" name="palestra_principal" value="palestra_sec">
-                        <label for="palestra_sec">Palestra 3: "Cibersegurança e Proteção de Infraestruturas Críticas" &ndash; Eng. Sofia Mendes</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="palestra_cloud" name="palestra_principal" value="palestra_cloud">
-                        <label for="palestra_cloud">Palestra 4: "Computação em Nuvem e Arquiteturas Escaláveis de Alta Disponibilidade" &ndash; Msc. Lucas Pinheiro</label>
-                    </p>
+                    <legend><strong>6. Palestra Principal Escolhida (Seleção Única)</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top"><strong>Palestra magna:</strong></td>
+                            <td align="left">
+                                <input type="radio" id="palestra_ada" name="palestra_principal" value="palestra_ada" checked>
+                                <label for="palestra_ada">Palestra 1: "A Origem dos Algoritmos e Programação Pioneira" &ndash; Ada Lovelace</label><br>
+                                <input type="radio" id="palestra_alan" name="palestra_principal" value="palestra_alan">
+                                <label for="palestra_alan">Palestra 2: "Fundamentos da Teoria da Computação e Algoritmos Clássicos" &ndash; Alan Gaúcho / Alan Turing</label><br>
+                                <input type="radio" id="palestra_tim" name="palestra_principal" value="palestra_tim">
+                                <label for="palestra_tim">Palestra 3: "A Criação da World Wide Web e a Semântica do HTML" &ndash; Tim Berners-Lee</label><br>
+                                <input type="radio" id="palestra_stallman" name="palestra_principal" value="palestra_stallman">
+                                <label for="palestra_stallman">Palestra 4: "A Filosofia GNU, Software Livre e a Liberdade do Usuário na Web" &ndash; Turing Stallman Gaúcho</label><br>
+                                <input type="radio" id="palestra_neymar" name="palestra_principal" value="palestra_neymar">
+                                <label for="palestra_neymar">Palestra 5: "Neymar Jr pai da ciencia da computação: Dribles Lógicos, Otimização de Performance e Controle de Bola em Tempo Real" &ndash; Neymar Jr</label>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
                 <!-- RF17: Nível de Experiência em Programação -->
                 <fieldset>
-                    <legend>Nível de Experiência em Programação</legend>
-                    <p>Como você avalia sua bagagem técnica prévia em desenvolvimento de software?</p>
-                    <p>
-                        <input type="radio" id="exp_nenhuma" name="nivel_experiencia" value="nenhuma">
-                        <label for="exp_nenhuma">Nenhuma experiência (Interessado em aprender do zero)</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="exp_iniciante" name="nivel_experiencia" value="iniciante" checked>
-                        <label for="exp_iniciante">Iniciante (Conhecimentos básicos de lógica ou tags HTML)</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="exp_intermediario" name="nivel_experiencia" value="intermediario">
-                        <label for="exp_intermediario">Intermediário (Já desenvolve pequenos projetos ou sites)</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="exp_avancado" name="nivel_experiencia" value="avancado">
-                        <label for="exp_avancado">Avançado (Experiência profissional ou projetos complexos)</label>
-                    </p>
+                    <legend><strong>7. Nível de Experiência em Programação</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top"><strong>Seu nível técnico:</strong></td>
+                            <td align="left">
+                                <input type="radio" id="exp_nenhuma" name="nivel_experiencia" value="nenhuma">
+                                <label for="exp_nenhuma">Nenhuma experiência prévia (Interessado em aprender do zero)</label><br>
+                                <input type="radio" id="exp_iniciante" name="nivel_experiencia" value="iniciante" checked>
+                                <label for="exp_iniciante">Iniciante (Conhecimentos fundamentais de lógica e sintaxe HTML)</label><br>
+                                <input type="radio" id="exp_intermediario" name="nivel_experiencia" value="intermediario">
+                                <label for="exp_intermediario">Intermediário (Já desenvolve pequenos projetos e programas)</label><br>
+                                <input type="radio" id="exp_avancado" name="nivel_experiencia" value="avancado">
+                                <label for="exp_avancado">Avançado (Experiência técnica consolidada em sistemas de alta complexidade)</label>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
                 <!-- RF18 e RF19: Tempo de Experiência e Sistema Operacional -->
                 <fieldset>
-                    <legend>Experiência e Ambiente Computacional</legend>
-                    <!-- RF18: Tempo de experiência -->
-                    <p>
-                        <label for="tempo_experiencia">Tempo aproximado de envolvimento com computação/tecnologia (em anos, de 0 a 10):</label><br>
-                        <input type="range" id="tempo_experiencia" name="tempo_experiencia" min="0" max="10" step="1" value="2">
-                        <br>
-                        <small>Escala: 0 anos (iniciando agora) até 10+ anos (veterano)</small>
-                    </p>
-
-                    <!-- RF19: Sistema Operacional (Mínimo 4 opções) -->
-                    <p>
-                        <label for="sistema_operacional">Qual é o seu Sistema Operacional preferido de trabalho?</label><br>
-                        <select id="sistema_operacional" name="sistema_operacional" required>
-                            <option value="">Selecione seu sistema...</option>
-                            <option value="linux" selected>Linux (Ubuntu, Debian, Fedora, Arch, etc.)</option>
-                            <option value="windows">Microsoft Windows (10, 11)</option>
-                            <option value="macos">Apple macOS</option>
-                            <option value="outro">Outro Sistema Operacional (BSD, etc.)</option>
-                        </select>
-                    </p>
+                    <legend><strong>8. Experiência e Ambiente Computacional</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="tempo_experiencia"><strong>Tempo de Envolvimento (anos):</strong></label>
+                            </td>
+                            <td align="left">
+                                <input type="range" id="tempo_experiencia" name="tempo_experiencia" min="0" max="10" step="1" value="2">
+                                <span>(Escala de 0 a 10 anos ou mais)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="sistema_operacional"><strong>Sistema Operacional Principal:</strong></label>
+                            </td>
+                            <td align="left">
+                                <select id="sistema_operacional" name="sistema_operacional" required aria-required="true">
+                                    <option value="">Selecione seu sistema...</option>
+                                    <option value="linux" selected>Linux (Ubuntu, Debian, Fedora, Arch, etc.)</option>
+                                    <option value="windows">Microsoft Windows (10, 11)</option>
+                                    <option value="macos">Apple macOS</option>
+                                    <option value="outro">Outro Sistema Operacional (BSD, etc.)</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
                 <!-- RF20: Origem da Divulgação (Mínimo 4 opções) -->
                 <fieldset>
-                    <legend>Origem da Divulgação</legend>
-                    <p>Como você tomou conhecimento do Tech Challenge 2026&trade;?</p>
-                    <p>
-                        <input type="radio" id="origem_professores" name="origem_divulgacao" value="professores" checked>
-                        <label for="origem_professores">Aviso de Professores em sala de aula ou Murais do IFCE</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="origem_redes" name="origem_divulgacao" value="redes_sociais">
-                        <label for="origem_redes">Redes Sociais Institucionais (Instagram, LinkedIn ou YouTube)</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="origem_colegas" name="origem_divulgacao" value="colegas">
-                        <label for="origem_colegas">Indicação de Colegas, Amigos ou Grêmio Estudantil</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="origem_cartazes" name="origem_divulgacao" value="cartazes">
-                        <label for="origem_cartazes">Banners físicos, Faixas ou Cartazes pelo Campus Maracanaú</label>
-                    </p>
+                    <legend><strong>9. Origem da Divulgação</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top"><strong>Como conheceu o evento?</strong></td>
+                            <td align="left">
+                                <input type="radio" id="origem_professores" name="origem_divulgacao" value="professores" checked>
+                                <label for="origem_professores">Aviso de Professores em sala de aula ou Murais do IFCE</label><br>
+                                <input type="radio" id="origem_redes" name="origem_divulgacao" value="redes_sociais">
+                                <label for="origem_redes">Redes Sociais Institucionais do IFCE</label><br>
+                                <input type="radio" id="origem_colegas" name="origem_divulgacao" value="colegas">
+                                <label for="origem_colegas">Indicação de Colegas, Amigos ou Grupos de Estudo</label><br>
+                                <input type="radio" id="origem_cartazes" name="origem_divulgacao" value="cartazes">
+                                <label for="origem_cartazes">Cartazes e Faixas no Campus Maracanaú</label>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
                 <!-- RF21: Informações Adicionais (textarea rows=5 cols=50) -->
                 <fieldset>
-                    <legend>Informações Adicionais</legend>
-                    <p>
-                        <label for="justificativa">Justifique seu interesse no evento e compartilhe suas principais expectativas:</label><br>
-                        <textarea id="justificativa" name="justificativa" rows="5" cols="50" placeholder="Descreva brevemente o que você espera aprender e desenvolver durante o Tech Challenge 2026..."></textarea>
-                    </p>
+                    <legend><strong>10. Informações Adicionais</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top">
+                                <label for="justificativa"><strong>Justificativa e Expectativas:</strong></label>
+                            </td>
+                            <td align="left">
+                                <textarea id="justificativa" name="justificativa" rows="5" cols="50" placeholder="Descreva suas expectativas técnicas e o que motivou sua inscrição para assistir às lendas da computação no Tech Challenge 2026..."></textarea>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
                 <!-- RF22: Autorizações e Declarações (3 checkboxes independentes) -->
                 <fieldset>
-                    <legend>Autorizações e Declarações</legend>
-                    <p>
-                        <input type="checkbox" id="aceite_regras" name="aceite_regras" required>
-                        <label for="aceite_regras"><strong>(Obrigatório)</strong> Declaro que li e aceito integralmente todas as normas e regulamentos do evento.</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="autorizacao_imagem" name="autorizacao_imagem">
-                        <label for="autorizacao_imagem">Autorizo a captura e uso gratuito da minha imagem e voz para fins estritamente pedagógicos e de divulgação institucional do IFCE.</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="receber_novidades" name="receber_novidades">
-                        <label for="receber_novidades">Desejo receber por e-mail convites, boletins informativos e novidades sobre futuros eventos e cursos promovidos pelo IFCE.</label>
-                    </p>
-
-                    <!-- RF26: Link destacado para o Termo de Participação -->
-                    <p>
-                        <em>Atenção:</em> Para detalhes sobre direitos, deveres e privacidade, 
-                        <a href="#termo">consulte o Termo de Participação</a> completo ao final desta página.
-                    </p>
+                    <legend><strong>11. Termos e Autorizações</strong></legend>
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="top"><strong>Declarações:</strong></td>
+                            <td align="left">
+                                <input type="checkbox" id="aceite_regras" name="aceite_regras" required aria-required="true">
+                                <label for="aceite_regras"><strong>(Obrigatório)</strong> Declaro que li e concordo com todas as normas e regulamentos do evento.</label><br>
+                                <input type="checkbox" id="autorizacao_imagem" name="autorizacao_imagem">
+                                <label for="autorizacao_imagem">Autorizo a captura e veiculação gratuita da minha imagem e voz para fins institucionais e pedagógicos do IFCE.</label><br>
+                                <input type="checkbox" id="receber_novidades" name="receber_novidades">
+                                <label for="receber_novidades">Desejo receber informes, boletins e convites para futuros cursos e eventos promovidos pelo IFCE.</label>
+                                <p>
+                                    <em>Atenção:</em> Para detalhes sobre direitos, deveres e privacidade, 
+                                    <a href="#termo">consulte o Termo de Participação</a> completo ao final desta página.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
                 </fieldset>
 
                 <br>
 
-                <!-- RF23: Botões de Finalização (Submit e Reset) -->
-                <p>
-                    <input type="submit" value="Realizar Inscrição no Tech Challenge">
-                    <input type="reset" value="Limpar Todos os Campos">
-                </p>
+                <!-- RF23: Botões de Finalização (Submit e Reset) Alinhados em Tabela -->
+                <table border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td align="right" width="200">&nbsp;</td>
+                        <td align="left">
+                            <input type="submit" value="Realizar Inscrição no Tech Challenge">
+                            &nbsp;&nbsp;
+                            <input type="reset" value="Limpar Todos os Campos">
+                        </td>
+                    </tr>
+                </table>
 
             </form>
 
@@ -568,36 +687,41 @@
         <section id="informacoes">
             <h2>Informações Importantes aos Participantes</h2>
 
+            <!-- Bloco de Destaque com blockquote -->
+            <blockquote>
+                <strong>Atenção aos Prazos e Vagas:</strong> Devido à presença histórica de Alan Gaúcho, Turing Stallman Gaúcho, Ada Lovelace, Linus Torvalds, Tim Berners-Lee e Neymar Jr, as vagas presenciais nos auditórios e laboratórios são estritamente limitadas.
+            </blockquote>
+
             <article>
-                <h3>Prazos e Vagas</h3>
+                <h3>Prazos e Homologação das Vagas</h3>
                 <p>
-                    O período oficial de inscrições permanecerá aberto até o dia <strong>10 de Outubro de 2026</strong> ou até o esgotamento da capacidade física dos auditórios e laboratórios. O preenchimento das vagas das oficinas práticas é estritamente por ordem de envio do formulário eletrônico.
+                    O período de inscrições permanecerá aberto até o dia <strong>10 de Outubro de 2026</strong> ou até o esgotamento total da capacidade dos auditórios. A confirmação ocorre por ordem cronológica de submissão do formulário.
                 </p>
             </article>
 
             <article>
-                <h3>Credenciamento e Documentação Exigida</h3>
+                <h3>Credenciamento Presencial e Documentação</h3>
                 <p>
-                    O credenciamento presencial terá início pontualmente às <strong>07:30</strong> no saguão principal do IFCE Campus Maracanaú no dia 15 de Outubro. É obrigatório apresentar:
+                    O credenciamento presencial ocorrerá a partir das <strong>07:30</strong> no hall do Auditório Central no dia 15 de Outubro. É mandatório apresentar:
                 </p>
                 <ul>
-                    <li>Documento oficial com foto (RG, CNH, Carteira de Trabalho ou Passaporte).</li>
-                    <li>Comprovante de matrícula regular (exclusivo para participantes que se inscreveram na categoria Estudante).</li>
-                    <li>Comprovante de inscrição emitido eletronicamente após a submissão deste formulário.</li>
+                    <li>Documento oficial com foto (RG, CNH, Passaporte ou Carteira de Trabalho).</li>
+                    <li>Comprovante de matrícula regular (exclusivo para inscritos na categoria Estudante).</li>
+                    <li>Comprovante impresso ou digital de confirmação de inscrição emitido por este portal.</li>
                 </ul>
             </article>
 
             <article>
-                <h3>Regras de Conduta e Uso dos Laboratórios</h3>
+                <h3>Conduta e Utilização dos Laboratórios</h3>
                 <p>
-                    Durante a utilização dos laboratórios de informática, não é permitido o consumo de alimentos ou bebidas próximas aos computadores. Os participantes são encorajados a trazerem seus próprios dispositivos móveis ou notebooks, caso desejem participar do Hackathon com suas próprias configurações de desenvolvimento.
+                    Não é permitido o consumo de alimentos ou bebidas próximo às estações de trabalho nos laboratórios de informática. Participantes do Hackathon podem utilizar seus próprios notebooks ou as estações com Linux preparadas pelo campus.
                 </p>
             </article>
 
             <article>
-                <h3>Canal de Atendimento e Dúvidas</h3>
+                <h3>Canal de Suporte e Atendimento</h3>
                 <p>
-                    Para esclarecimento de dúvidas adicionais, solicitação de condições de acessibilidade ou suporte durante a inscrição, envie uma mensagem para a coordenação através do e-mail oficial: 
+                    Para dúvidas acadêmicas, solicitação de condições especiais de acessibilidade ou suporte, envie uma mensagem para a coordenação através do e-mail oficial: 
                     <a href="mailto:techchallenge@maracanau.ifce.edu.br">techchallenge@maracanau.ifce.edu.br</a>.
                 </p>
             </article>
@@ -613,48 +737,48 @@
             <h2>Termo de Participação, Conduta e Responsabilidade</h2>
 
             <p>
-                Este documento estabelece os termos e condições vinculantes para a participação no evento <strong>Tech Challenge 2026&trade;</strong>, promovido pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú. Ao submeter a inscrição, o participante expressa sua inequívoca concordância com as cláusulas a seguir descritas.
+                Este documento estabelece as condições vinculantes para a participação no evento <strong>Tech Challenge 2026&trade;</strong>, promovido pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú. Ao submeter a inscrição, o participante manifesta sua expressa concordância com as cláusulas abaixo.
             </p>
 
-            <h3>Cláusula 1&ordf; &ndash; Do Objeto e Natureza Acadêmica</h3>
+            <h3>Cláusula 1&ordf; &ndash; Do Objeto e Finalidade Acadêmica</h3>
             <p>
-                O Tech Challenge tem finalidade estritamente pedagógica, cultural e científica, não possuindo quaisquer fins lucrativos ou comerciais. As atividades promovidas destinam-se ao fomento da educação técnica e tecnológica na área de Informática e Telemática.
+                O Tech Challenge tem finalidade estritamente pedagógica, cultural e científica, sem fins lucrativos ou comerciais. As atividades visam enriquecer a formação técnica e cidadã na área de computação.
             </p>
 
             <h3>Cláusula 2&ordf; &ndash; Dos Direitos e Responsabilidades do Participante</h3>
             <p>O participante regularmente inscrito terá direito a:</p>
             <ul>
-                <li>Participar de todas as palestras abertas e conferências plenárias programadas.</li>
-                <li>Concorrer às premiações das competições e hackathons, desde que atendidos os regulamentos específicos de cada prova.</li>
-                <li>Acesso à infraestrutura de rede e laboratórios disponibilizados para as oficinas cadastradas.</li>
-                <li>Recebimento de Certificado Digital de Participação de 20 horas de atividades complementares, condicionado à presença mínima de 75% apurada em lista de frequência oficial.</li>
+                <li>Participar de todas as conferências abertas e mesas-redondas programadas.</li>
+                <li>Concorrer às premiações das competições acadêmicas e hackathons.</li>
+                <li>Acesso à infraestrutura de rede e laboratórios durante as oficinas nas quais estiver homologado.</li>
+                <li>Certificado Digital de Participação de 20 horas complementares, mediante presença mínima de 75%.</li>
             </ul>
 
-            <p>Constituem deveres fundamentais de todo participante:</p>
+            <p>Constituem deveres do participante:</p>
             <ol>
-                <li>Manter postura ética, colaborativa e respeitosa perante colegas, professores, monitores, palestrantes e funcionários do campus.</li>
-                <li>Não praticar atos de discriminação, assédio, violência verbal ou física, sob pena de expulsão sumária do evento e responsabilização administrativa.</li>
-                <li>Preservar a integridade física de equipamentos, cabos de rede, mobiliário e instalações prediais do IFCE.</li>
-                <li>Utilizar a rede cabeada e Wi-Fi institucional em conformidade com as diretrizes do Comitê Gestor da Internet no Brasil e com a legislação federal vigente.</li>
+                <li>Manter postura ética, fraterna e respeitosa com todos os participantes, docentes, palestrantes e servidores do campus.</li>
+                <li>Não praticar atos de discriminação, assédio ou qualquer conduta inadequada no recinto acadêmico.</li>
+                <li>Zelar pela conservação dos equipamentos laboratoriais e instalações físicas do IFCE.</li>
+                <li>Utilizar a rede institucional de internet em estrita conformidade com a legislação federal vigente.</li>
             </ol>
 
-            <h3>Cláusula 3&ordf; &ndash; Da Proteção de Dados e Privacidade (LGPD)</h3>
+            <h3>Cláusula 3&ordf; &ndash; Da Proteção de Dados Pessoais (LGPD)</h3>
             <p>
                 Em conformidade com a <strong>Lei Geral de Proteção de Dados Pessoais</strong> 
                 (<a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener noreferrer">Lei Federal n&ordm; 13.709/2018</a>), 
-                o IFCE Campus Maracanaú assegura que as informações coletadas no formulário de inscrição serão utilizadas exclusivamente para fins de organização interna do evento, controle de presença e emissão dos certificados acadêmicos, sendo vedado o repasse a terceiros para finalidades comerciais.
+                o IFCE assegura que os dados coletados serão usados unicamente para identificação, controle de presença e emissão dos certificados acadêmicos.
             </p>
 
             <h3>Cláusula 4&ordf; &ndash; Do Uso de Imagem e Voz</h3>
             <p>
-                As sessões do evento poderão ser fotografadas e filmadas para elaboração de relatórios acadêmicos e divulgação institucional nas mídias oficiais do 
-                <a href="https://ifce.edu.br" target="_blank" rel="noopener noreferrer">IFCE</a>. O participante que assinalar a autorização facultativa correspondente no formulário concorda com essa veiculação a título gratuito.
+                As sessões do evento poderão ser fotografadas e gravadas para registro pedagógico e divulgação nas mídias institucionais do 
+                <a href="https://ifce.edu.br" target="_blank" rel="noopener noreferrer">IFCE</a>, sem quaisquer ônus financeiros.
             </p>
 
-            <!-- RF26: Link de retorno imediato ao Formulário de Inscrição -->
+            <!-- RF26: Link com aria-label de retorno ao Formulário de Inscrição -->
             <p>
                 <strong>Retorno:</strong> 
-                <a href="#inscricao">&uarr; Retornar ao Formulário de Inscrição</a>
+                <a href="#inscricao" aria-label="Retornar para o formulário de inscrição">&uarr; Retornar ao Formulário de Inscrição</a>
             </p>
 
             <!-- Link de retorno ao topo -->
@@ -663,27 +787,12 @@
 
     </main>
 
-    <hr>
-
-    <!-- ==================== RODAPÉ INSTITUCIONAL ==================== -->
+    <!-- RODAPÉ INSTITUCIONAL PADRÃO -->
     <footer>
-        <p>
-            <strong>Tech Challenge 2026&trade;</strong> &ndash; Trabalho Acadêmico 3 de Programação Web I.<br>
-            <strong>Instituição:</strong> Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) &ndash; Campus Maracanaú.<br>
-            <strong>Endereço:</strong> Av. Contorno Norte, 10 &ndash; Distrito Industrial I, Maracanaú - CE, CEP: 61939-140.<br>
-            <strong>Telefone:</strong> (85) 3878-6300 &bull; <strong>E-mail:</strong> <a href="mailto:contato.maracanau@ifce.edu.br">contato.maracanau@ifce.edu.br</a>
-        </p>
-
-        <p>
-            <strong>Orientador da Disciplina:</strong> Prof. Daniel Ferreira &bull; 
-            <strong>Desenvolvido por:</strong> Aluno do Curso de Informática &bull; 
-            Padrões Semânticos <a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">W3C HTML5 Puro</a>.
-        </p>
-
-        <p>
-            <small>&copy; 2026 IFCE Campus Maracanaú. Todos os direitos reservados. Projeto estritamente acadêmico sem fins comerciais.</small>
-        </p>
-
+        <hr>
+        <p>&copy; 2026 Tech Challenge &mdash; IFCE Campus Maracanaú &bull; Todos os direitos reservados.</p>
+        <p><strong>Desenvolvido por:</strong> Cauê Cavalcante Pereira.</p>
+        <p>Disciplina: Programação Web I &bull; Prof. Daniel Ferreira</p>
         <p><a href="#inicio">&uarr; Voltar ao topo da página</a></p>
     </footer>
 

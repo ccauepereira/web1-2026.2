@@ -7,187 +7,338 @@
 </head>
 <body>
 
-    <!-- ==================== CABEÇALHO E NAVEGAÇÃO ==================== -->
+    <!-- ATALHO DE ACESSIBILIDADE -->
+    <a href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <hr>
+
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
     <header id="inicio">
-        <h1>Tech Challenge 2026&trade;</h1>
-        <h2>Painel de Palestrantes e Instrutores Convidados</h2>
         
-        <nav aria-label="Navegação da Página de Palestrantes">
+        <!-- BARRA DE NAVEGAÇÃO ENTRE ABAS -->
+        <nav aria-label="Navegação entre páginas">
             <p>
-                <a href="index.html">&larr; Retornar à Página Principal</a> &bull; 
-                <a href="#helena">Dra. Helena Vasconcelos</a> &bull; 
-                <a href="#carlos">Prof. Carlos Eduardo</a> &bull; 
-                <a href="#sofia">Eng. Sofia Mendes</a> &bull; 
-                <a href="#lucas">Msc. Lucas Pinheiro</a> &bull; 
-                <a href="faq.html">Perguntas Frequentes (FAQ) &rarr;</a>
+                [ <a href="index.html">Início</a> ] | 
+                [ <strong aria-current="page">Palestrantes (Página Atual)</strong> ] | 
+                [ <a href="faq.html">Dúvidas Frequentes (FAQ)</a> ]
             </p>
         </nav>
+
+        <hr>
+
+        <h1>Tech Challenge 2026&trade;</h1>
+        <h2>Galeria dos Astros e Lendas da Computação</h2>
+        <p>
+            <strong>Local do Evento:</strong> IFCE Campus Maracanaú &bull; 
+            <strong>Data:</strong> 15 a 17 de Outubro de 2026 &bull; 
+            <strong>Modalidade:</strong> Presencial
+        </p>
+
+        <!-- MENU RÁPIDO ENTRE PALESTRANTES -->
+        <nav aria-label="Navegação entre os palestrantes desta página">
+            <p>
+                <strong>Ir diretamente para:</strong> 
+                <a href="#alan-gaucho">Alan Gaúcho / Alan Turing</a> &bull; 
+                <a href="#stallman-gaucho">Turing Stallman Gaúcho</a> &bull; 
+                <a href="#ada-lovelace">Ada Lovelace</a> &bull; 
+                <a href="#linus-torvalds">Linus Torvalds</a> &bull; 
+                <a href="#tim-berners-lee">Tim Berners-Lee</a> &bull; 
+                <a href="#neymar-jr">Neymar Jr</a>
+            </p>
+        </nav>
+
     </header>
 
     <hr>
 
-    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
-    <main>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="conteudo-principal">
+
         <section>
-            <h2>Especialistas e Líderes Técnicos Confirmados</h2>
+            <h2>Pioneiros, Visionários e Mestres da Computação</h2>
             <p>
-                Conheça os pesquisadores, engenheiros e docentes que conduzirão as palestras magnas, mesas redondas, oficinas práticas e mentorias do <strong>Tech Challenge 2026&trade;</strong> no IFCE Campus Maracanaú.
+                O <strong>Tech Challenge 2026&trade;</strong> reúne personalidades lendárias da história da ciência da computação e da tecnologia mundial. Conheça abaixo a biografia e a programação técnica que cada um dos astros apresentará nos palcos do IFCE Campus Maracanaú.
             </p>
         </section>
 
-        <!-- ==================== PALESTRANTE 1 ==================== -->
-        <article id="helena">
-            <h3>1. Dra. Helena Vasconcelos</h3>
-            <p><strong>Palestrante Magna de Abertura</strong> &bull; Pesquisadora Sênior em Inteligência Artificial</p>
+        <!-- 1. ALAN GAÚCHO / ALAN TURING -->
+        <article id="alan-gaucho">
+            <h3>1. Alan Gaúcho / Alan Turing</h3>
+            <p><strong>Pai da Ciência da Computação Teórica e Inteligência Artificial</strong></p>
 
-            <figure>
-                <img src="imagens/palestrante1.jpg" alt="Retrato da Dra. Helena Vasconcelos, pesquisadora sênior em Inteligência Artificial e LLMs" width="250" height="250">
-                <figcaption>Figura 1: Dra. Helena Vasconcelos &ndash; Doutora em Ciência da Computação (UFC/Inria).</figcaption>
-            </figure>
+            <table border="0" cellpadding="6" cellspacing="0">
+                <tr>
+                    <td valign="top" width="270">
+                        <figure>
+                            <img src="imagens/AlanGaucho.png" alt="Retrato de Alan Gaúcho / Alan Turing" width="250">
+                            <figcaption>
+                                <small>Alan Gaúcho / Alan Turing &mdash; Fundador da Teoria da Computação e Algoritmos.</small>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td valign="top">
+                        <h4>Biografia e Contribuições Históricas</h4>
+                        <p>
+                            Matemático e lógico pioneiro, Alan Mathison Turing (carinhosamente homenageado no evento como Alan Gaúcho) formalizou os conceitos de algoritmo e computação por meio do modelo teórico universal conhecido como <em>Máquina de Turing</em>. Durante a Segunda Guerra Mundial, desempenhou papel decisivo na quebra da criptografia da máquina nazista <em>Enigma</em> em Bletchley Park, salvando milhões de vidas. Também estabeleceu os fundamentos da Inteligência Artificial ao formular o célebre <em>Teste de Turing</em> para avaliação de inteligência de máquinas.
+                        </p>
 
-            <h4>Minibiografia</h4>
-            <p>
-                A Dra. Helena Vasconcelos possui graduação e mestrado em Ciência da Computação pela Universidade Federal do Ceará (UFC) e doutorado sanduíche pelo Inria (França). Com mais de 15 anos de trajetória acadêmica e industrial, é referência nacional em modelos fundacionais de linguagem (LLMs), sistemas de recomendação e processamento de linguagem natural. Atua como consultora de inovação aberta e lidera iniciativas de inclusão científica de jovens pesquisadoras na área de computação.
-            </p>
+                        <h4>Palestra Magna Confirmada</h4>
+                        <p>
+                            <strong>Tema:</strong> "Fundamentos da Teoria da Computação e Algoritmos Clássicos"<br>
+                            <strong>Local:</strong> Auditório Central &bull; <strong>Horário:</strong> 11:00 às 12:30
+                        </p>
 
-            <h4>Áreas de Atuação e Especialidades</h4>
-            <ul>
-                <li>Inteligência Artificial Generativa e Modelos de Linguagem (LLMs).</li>
-                <li>Processamento de Linguagem Natural e Recuperação Semântica da Informação.</li>
-                <li>Ética, Explicabilidade e Governança em Sistemas Algorítmicos.</li>
-            </ul>
+                        <h4>Tópicos Abordados</h4>
+                        <ol>
+                            <li>Modelos formais de autômatos e a tese de Church-Turing.</li>
+                            <li>Técnicas criptográficas de quebra e decodificação em larga escala.</li>
+                            <li>Limites da computabilidade, o Problema da Parada e complexidade algorítmica.</li>
+                            <li>Bases matemáticas para redes neurais artificiais e aprendizado de máquina.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
 
-            <h4>Tópicos Abordados na Palestra Magna</h4>
-            <ol>
-                <li>Evolução histórica das arquiteturas de redes neurais profundas até os modelos de atenção e transformadores.</li>
-                <li>O papel da IA na automação de processos de engenharia de software e geração de interfaces.</li>
-                <li>Desafios éticos: viés cognitivo, privacidade de dados e conformidade regulatória.</li>
-                <li>Oportunidades de pesquisa e empreendedorismo em IA para estudantes dos cursos técnicos e superiores do IFCE.</li>
-            </ol>
-
-            <p><a href="#inicio">&uarr; Voltar ao início da página</a></p>
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
         </article>
 
         <hr>
 
-        <!-- ==================== PALESTRANTE 2 ==================== -->
-        <article id="carlos">
-            <h3>2. Prof. Carlos Eduardo Silveira</h3>
-            <p><strong>Debatedor Principal da Mesa Redonda</strong> &bull; Especialista em Padrões W3C e Acessibilidade Digital</p>
+        <!-- 2. TURING STALLMAN GAÚCHO -->
+        <article id="stallman-gaucho">
+            <h3>2. Turing Stallman Gaúcho</h3>
+            <p><strong>Richard Stallman &amp; Movimento Software Livre</strong></p>
 
-            <figure>
-                <img src="imagens/palestrante2.jpg" alt="Retrato do Prof. Carlos Eduardo, especialista em padrões web abertos e acessibilidade" width="250" height="250">
-                <figcaption>Figura 2: Prof. Carlos Eduardo &ndash; Mestre em Engenharia de Software e Consultor de Acessibilidade Digital.</figcaption>
-            </figure>
+            <table border="0" cellpadding="6" cellspacing="0">
+                <tr>
+                    <td valign="top" width="270">
+                        <figure>
+                            <img src="imagens/AlanGaucho.png" alt="Retrato de Turing Stallman Gaúcho" width="250">
+                            <figcaption>
+                                <small>Turing Stallman Gaúcho &mdash; Ativista do Software Livre e Projeto GNU.</small>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td valign="top">
+                        <h4>Biografia e Defesa do Software Livre</h4>
+                        <p>
+                            Fundador do Movimento Software Livre e do projeto GNU, iniciou nos anos 1980 a luta pela emancipação tecnológica e pelas quatro liberdades essenciais dos usuários de computadores: executar, estudar, modificar e redistribuir cópias de software. Criador da licença GNU GPL (General Public License) e autor de ferramentas históricas como o editor GNU Emacs e o compilador GCC, representa a união da teoria formal com a ética hacker libertária.
+                        </p>
 
-            <h4>Minibiografia</h4>
-            <p>
-                Carlos Eduardo é docente, pesquisador e consultor independente com foco exclusivo em acessibilidade web, design universal e semântica de interfaces. Integra grupos de estudo vinculados ao consórcio <a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">W3C</a> e possui ampla experiência na auditoria e adequação de sítios eletrônicos de órgãos públicos federais aos parâmetros do Modelo de Acessibilidade em Governo Eletrônico (e-MAG) e das diretrizes internacionais WCAG 2.2.
-            </p>
+                        <h4>Mesa Redonda Confirmada</h4>
+                        <p>
+                            <strong>Tema:</strong> "A Filosofia GNU, Software Livre e a Liberdade do Usuário na Web"<br>
+                            <strong>Local:</strong> Auditório Central &bull; <strong>Horário:</strong> 16:30 às 18:00
+                        </p>
 
-            <h4>Áreas de Atuação e Especialidades</h4>
-            <ul>
-                <li>Padrões Web Abertos e Especificações HTML5 Semântico Puro.</li>
-                <li>Diretrizes de Acessibilidade para Conteúdo Web (WCAG 2.2 níveis A, AA e AAA).</li>
-                <li>Arquitetura da Informação e Usabilidade de Formulários Complexos.</li>
-            </ul>
+                        <h4>Tópicos Abordados</h4>
+                        <ol>
+                            <li>As quatro liberdades fundamentais do software e a cidadania digital.</li>
+                            <li>Ameaças do software privativo, vigilância em massa e DRM na web.</li>
+                            <li>O papel estratégico de formatos e protocolos abertos na educação pública e no IFCE.</li>
+                            <li>Soberania tecnológica para estudantes e instituições de pesquisa.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
 
-            <h4>Tópicos Abordados na Mesa Redonda</h4>
-            <ol>
-                <li>A importância primordial da semântica nativa para usuários de leitores de tela e tecnologias assistivas.</li>
-                <li>Como a dependência excessiva de scripts dinâmicos compromete a robustez e a universalidade da internet.</li>
-                <li>Estudos de caso reais de exclusão digital provocada por código mal estruturado.</li>
-                <li>Estratégias práticas para ensinar e aplicar acessibilidade desde os primeiros passos da formação em computação.</li>
-            </ol>
-
-            <p><a href="#inicio">&uarr; Voltar ao início da página</a></p>
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
         </article>
 
         <hr>
 
-        <!-- ==================== PALESTRANTE 3 ==================== -->
-        <article id="sofia">
-            <h3>3. Eng. Sofia Mendes</h3>
-            <p><strong>Instrutora da Oficina Prática</strong> &bull; Especialista em Segurança Ofensiva e Redes Corporativas</p>
+        <!-- 3. ADA LOVELACE -->
+        <article id="ada-lovelace">
+            <h3>3. Ada Lovelace</h3>
+            <p><strong>Pioneira da Programação e Primeira Programadora da História</strong></p>
 
-            <figure>
-                <img src="imagens/palestrante3.jpg" alt="Retrato da Eng. Sofia Mendes, especialista em cibersegurança e testes de intrusão" width="250" height="250">
-                <figcaption>Figura 3: Eng. Sofia Mendes &ndash; Especialista em Segurança Defensiva e Análise Forense Computacional.</figcaption>
-            </figure>
+            <table border="0" cellpadding="6" cellspacing="0">
+                <tr>
+                    <td valign="top" width="270">
+                        <figure>
+                            <img src="imagens/AdaLovelace.jpeg" alt="Retrato histórico de Ada Lovelace" width="250">
+                            <figcaption>
+                                <small>Ada Lovelace &mdash; Matemática e Criadora do Primeiro Algoritmo para Máquinas.</small>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td valign="top">
+                        <h4>Biografia e Contribuições Históricas</h4>
+                        <p>
+                            Augusta Ada King, Condessa de Lovelace, foi uma extraordinária matemática e escritora inglesa. Ao trabalhar ao lado de Charles Babbage na Máquina Analítica, escreveu o primeiro algoritmo destinado a ser processado por uma máquina, tornando-se universalmente reconhecida como a primeira pessoa a programar na história da humanidade. Teve a visão revolucionária de que os computadores poderiam manipular símbolos, notas musicais e conceitos abstratos, muito além de meros cálculos numéricos.
+                        </p>
 
-            <h4>Minibiografia</h4>
-            <p>
-                Formada em Engenharia de Telecomunicações pelo Instituto Federal com especialização em Redes de Computadores e Cibersegurança, Sofia Mendes atua como engenheira sênior de segurança defensiva (Blue Team) em empresas do setor financeiro. É certificada internacionalmente (OSCP, CEH e Security+) e atua voluntariamente na organização de maratonas no estilo <em>Capture The Flag</em> (CTF) pelo Nordeste.
-            </p>
+                        <h4>Palestra Magna Confirmada</h4>
+                        <p>
+                            <strong>Tema:</strong> "A Origem dos Algoritmos e Programação Pioneira"<br>
+                            <strong>Local:</strong> Auditório Central &bull; <strong>Horário:</strong> 09:00 às 10:30
+                        </p>
 
-            <h4>Áreas de Atuação e Especialidades</h4>
-            <ul>
-                <li>Cibersegurança Defensiva, Hardening de Servidores e Monitoramento de Tráfego de Redes.</li>
-                <li>Análise Forense Digital e Resposta a Incidentes de Segurança.</li>
-                <li>Conscientização em Privacidade, Segurança de Dados e Conformidade com a LGPD.</li>
-            </ul>
+                        <h4>Tópicos Abordados</h4>
+                        <ol>
+                            <li>Estruturação lógica de instruções sequenciais e condicionais pioneiras.</li>
+                            <li>O conceito de sub-rotinas e algoritmos analíticos para cálculo dos números de Bernoulli.</li>
+                            <li>A "ciência poética": a união entre imaginação criativa, matemática e computação.</li>
+                            <li>Inclusão, protagonismo feminino e o papel das mulheres no avanço científico da tecnologia.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
 
-            <h4>Tópicos Abordados no Laboratório Prático</h4>
-            <ol>
-                <li>Identificação de vetores de ataque comuns em tráfego HTTP não criptografado e mecanismos de mitigação.</li>
-                <li>Utilização de ferramentas de código aberto para inspeção e auditoria de pacotes de dados.</li>
-                <li>Princípios de segurança em formulários web, validação rigorosa de entradas de dados e sanitização.</li>
-                <li>Organização e regras da competição CTF acadêmica do Tech Challenge 2026.</li>
-            </ol>
-
-            <p><a href="#inicio">&uarr; Voltar ao início da página</a></p>
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
         </article>
 
         <hr>
 
-        <!-- ==================== PALESTRANTE 4 ==================== -->
-        <article id="lucas">
-            <h3>4. Msc. Lucas Pinheiro</h3>
-            <p><strong>Mentor-Chefe do Hackathon</strong> &bull; Arquiteto de Software e Engenheiro de Plataformas em Nuvem</p>
+        <!-- 4. LINUS TORVALDS -->
+        <article id="linus-torvalds">
+            <h3>4. Linus Torvalds</h3>
+            <p><strong>Criador do Kernel Linux e do Git</strong></p>
 
-            <figure>
-                <img src="imagens/palestrante4.jpg" alt="Retrato do Msc. Lucas Pinheiro, arquiteto de sistemas e especialista em computação em nuvem" width="250" height="250">
-                <figcaption>Figura 4: Msc. Lucas Pinheiro &ndash; Mestre em Informática Aplicada e Consultor em Arquitetura Distribuída.</figcaption>
-            </figure>
+            <table border="0" cellpadding="6" cellspacing="0">
+                <tr>
+                    <td valign="top" width="270">
+                        <figure>
+                            <img src="imagens/LinusTorvalds.jpeg" alt="Foto de Linus Torvalds" width="250">
+                            <figcaption>
+                                <small>Linus Torvalds &mdash; Arquiteto do Kernel Linux e do Git.</small>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td valign="top">
+                        <h4>Biografia e Contribuições Históricas</h4>
+                        <p>
+                            Engenheiro de software finlandês-americano, Linus Benedict Torvalds iniciou em 1991 o desenvolvimento do núcleo do sistema operacional <em>Linux</em>, que hoje impulsiona a esmagadora maioria dos servidores mundiais, supercomputadores, dispositivos móveis Android e sistemas em nuvem. Em 2005, revolucionou a engenharia de software colaborativa ao projetar o <em>Git</em>, sistema de controle de versão distribuído padrão de facto na indústria mundial.
+                        </p>
 
-            <h4>Minibiografia</h4>
-            <p>
-                Lucas Pinheiro é mestre em Informática Aplicada e atua há mais de uma década projetando sistemas de missão crítica, plataformas distribuídas e arquiteturas resilientes em nuvem. Possui ampla experiência no ecossistema de software livre e na mentoria de equipes universitárias em hackathons de âmbito nacional.
-            </p>
+                        <h4>Oficina Prática de Laboratório Confirmada</h4>
+                        <p>
+                            <strong>Tema:</strong> "Arquitetura do Kernel Linux e Controle de Versão com Git"<br>
+                            <strong>Local:</strong> Laboratório de Sistemas 01 &bull; <strong>Horário:</strong> 14:00 às 16:30
+                        </p>
 
-            <h4>Áreas de Atuação e Especialidades</h4>
-            <ul>
-                <li>Arquitetura de Software Escalável e Microsserviços.</li>
-                <li>Computação em Nuvem e Infraestrutura Automatizada.</li>
-                <li>Desenvolvimento de Soluções Colaborativas com Software Livre e Open Source.</li>
-            </ul>
+                        <h4>Tópicos Abordados</h4>
+                        <ol>
+                            <li>Arquitetura interna de kernels monolíticos, gerenciamento de processos e chamadas de sistema (syscalls).</li>
+                            <li>Fluxos avançados de trabalho com controle de versão distribuído via Git.</li>
+                            <li>Práticas e cultura de revisão de patches na comunidade internacional de código aberto.</li>
+                            <li>Filosofia Unix: simplicidade, robustez e código modular de alto desempenho.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
 
-            <h4>Tópicos Abordados no Hackathon e Mentoria</h4>
-            <ol>
-                <li>Definição de escopo mínimo viável (MVP) para projetos desenvolvidos em maratonas de 24 horas.</li>
-                <li>Modelagem de dados eficiente e padrões arquiteturais voltados à alta concorrência.</li>
-                <li>Critérios técnicos e pedagógicos de avaliação das equipes participantes do Tech Challenge.</li>
-                <li>Transição da ideia acadêmica para o ecossistema de inovação e prototipagem tecnológica.</li>
-            </ol>
-
-            <p><a href="#inicio">&uarr; Voltar ao início da página</a></p>
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
         </article>
+
+        <hr>
+
+        <!-- 5. TIM BERNERS-LEE -->
+        <article id="tim-berners-lee">
+            <h3>5. Tim Berners-Lee</h3>
+            <p><strong>Criador da World Wide Web (WWW) e das Especificações do HTML</strong></p>
+
+            <table border="0" cellpadding="6" cellspacing="0">
+                <tr>
+                    <td valign="top" width="270">
+                        <figure>
+                            <img src="imagens/TimBernersLee.jpeg" alt="Foto de Sir Tim Berners-Lee" width="250">
+                            <figcaption>
+                                <small>Sir Tim Berners-Lee &mdash; Inventor da World Wide Web e Diretor do W3C.</small>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td valign="top">
+                        <h4>Biografia e Contribuições Históricas</h4>
+                        <p>
+                            Cientista da computação britânico, Sir Timothy John Berners-Lee inventou a World Wide Web em 1989 durante sua pesquisa no CERN. Idealizou e escreveu os padrões fundamentais da internet moderna: o protocolo <em>HTTP</em>, o sistema de identificação <em>URI/URL</em> e a linguagem <em>HTML</em>. Fundou e dirige o <em>World Wide Web Consortium (W3C)</em>, dedicando sua vida à defesa intransigente de uma web aberta, neutra, acessível e universal.
+                        </p>
+
+                        <h4>Palestra e Prática Confirmadas</h4>
+                        <p>
+                            <strong>Tema:</strong> "A Criação da World Wide Web e a Semântica do HTML"<br>
+                            <strong>Local:</strong> Laboratório de Redes 02 &bull; <strong>Horário:</strong> 14:00 às 16:30
+                        </p>
+
+                        <h4>Tópicos Abordados</h4>
+                        <ol>
+                            <li>A gênese da web e a importância de especificações públicas e semânticas.</li>
+                            <li>Acessibilidade universal como direito humano fundamental no meio digital.</li>
+                            <li>Soberania de dados, privacidade dos usuários e descentralização da rede.</li>
+                            <li>Arquitetura cliente-servidor e a longevidade dos documentos estruturados em HTML puro.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </article>
+
+        <hr>
+
+        <!-- 6. NEYMAR JR -->
+        <article id="neymar-jr">
+            <h3>6. Neymar Jr</h3>
+            <p><strong>Neymar Jr pai da ciencia da computação</strong></p>
+
+            <table border="0" cellpadding="6" cellspacing="0">
+                <tr>
+                    <td valign="top" width="270">
+                        <figure>
+                            <img src="imagens/NeymarJr.jpeg" alt="Neymar Jr pai da ciencia da computação" width="250">
+                            <figcaption>
+                                <small>Neymar Jr &mdash; Pai da Ciência da Computação: Dribles Lógicos e Alta Performance em Tempo Real.</small>
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td valign="top">
+                        <h4>Trajetória e Aplicação de Algoritmos em Tempo Real</h4>
+                        <p>
+                            Aclamado no encerramento especial do Tech Challenge como "pai da ciência da computação", Neymar Jr traz uma perspectiva revolucionária ao demonstrar como o raciocínio sob extrema pressão física e espacial mimetiza os sistemas computacionais de tempo real mais sofisticados do planeta. Sua capacidade de processamento paralelo no gramado &mdash; analisando vetores de movimento de adversários em milissegundos e aplicando correções heurísticas instantâneas &mdash; traduz-se diretamente nos conceitos mais refinados de otimização de código e tolerância a falhas.
+                        </p>
+
+                        <h4>Painel Especial de Encerramento Confirmado</h4>
+                        <p>
+                            <strong>Tema:</strong> "Dribles Lógicos, Otimização de Performance e Controle de Bola em Tempo Real"<br>
+                            <strong>Local:</strong> Auditório Central &bull; <strong>Horário:</strong> 20:30 às 22:00
+                        </p>
+
+                        <h4>Tópicos Abordados no Painel</h4>
+                        <ol>
+                            <li>Processamento concorrente e cálculo de rotas preditivas de fuga em tempo real.</li>
+                            <li>Drible elegante de exceções inesperadas durante a execução do programa em campo.</li>
+                            <li>Gerenciamento de latência corporal e tomada de decisão ótima em milissegundos.</li>
+                            <li>Como manter o foco e a estabilidade sob alta concorrência de requisições de zagueiros.</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+
+            <p><a href="#inicio">&uarr; Voltar ao início</a></p>
+        </article>
+
+        <hr>
+
+        <!-- LINK DE INSCRIÇÃO DIRETA -->
+        <section>
+            <h3>Garanta sua Vaga nas Palestras e Oficinas</h3>
+            <p>
+                As vagas para as sessões presenciais com as lendas da computação são limitadas pela capacidade física dos auditórios e laboratórios do campus.
+            </p>
+            <p>
+                <a href="index.html#inscricao">&rarr; Inscreva-se nas palestras e oficinas na página inicial</a>
+            </p>
+        </section>
 
     </main>
 
-    <hr>
-
-    <!-- ==================== RODAPÉ INSTITUCIONAL ==================== -->
+    <!-- RODAPÉ INSTITUCIONAL PADRÃO -->
     <footer>
-        <p>
-            <strong>Tech Challenge 2026&trade;</strong> &ndash; Programação Web I &bull; Prof. Daniel Ferreira.<br>
-            Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú.<br>
-            <small>&copy; 2026 IFCE. Todos os direitos reservados. Desenvolvido em conformidade estrita com HTML5 puro e acessível.</small>
-        </p>
-        <p>
-            <a href="index.html">&larr; Retornar à Página Principal</a> &bull; 
-            <a href="faq.html">Ir para Perguntas Frequentes (FAQ) &rarr;</a>
-        </p>
+        <hr>
+        <p>&copy; 2026 Tech Challenge &mdash; IFCE Campus Maracanaú &bull; Todos os direitos reservados.</p>
+        <p><strong>Desenvolvido por:</strong> Cauê Cavalcante Pereira.</p>
+        <p>Disciplina: Programação Web I &bull; Prof. Daniel Ferreira</p>
+        <p><a href="#inicio">&uarr; Voltar ao topo da página</a></p>
     </footer>
 
 </body>

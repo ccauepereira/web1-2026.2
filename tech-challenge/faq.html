@@ -7,35 +7,49 @@
 </head>
 <body>
 
-    <!-- ==================== CABEÇALHO E NAVEGAÇÃO ==================== -->
-    <header id="inicio">
-        <h1>Tech Challenge 2026&trade;</h1>
-        <h2>Central de Dúvidas e Perguntas Frequentes (FAQ)</h2>
+    <!-- ATALHO DE ACESSIBILIDADE -->
+    <a href="#conteudo-principal">Pular para o conteúdo principal</a>
 
-        <nav aria-label="Navegação da Página de FAQ">
+    <hr>
+
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header id="inicio">
+        
+        <!-- BARRA DE NAVEGAÇÃO ENTRE ABAS -->
+        <nav aria-label="Navegação entre páginas">
             <p>
-                <a href="index.html">&larr; Retornar à Página Principal</a> &bull; 
-                <a href="palestrantes.html">Conhecer os Palestrantes</a> &bull; 
-                <a href="#contato-suporte">Fale Conosco</a>
+                [ <a href="index.html">Início</a> ] | 
+                [ <a href="palestrantes.html">Palestrantes</a> ] | 
+                [ <strong aria-current="page">Dúvidas Frequentes (FAQ) (Página Atual)</strong> ]
             </p>
         </nav>
+
+        <hr>
+
+        <h1>Tech Challenge 2026&trade;</h1>
+        <h2>Central de Dúvidas e Perguntas Frequentes (FAQ)</h2>
+        <p>
+            <strong>Local do Evento:</strong> IFCE Campus Maracanaú &bull; 
+            <strong>Data:</strong> 15 a 17 de Outubro de 2026
+        </p>
     </header>
 
     <hr>
 
-    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
-    <main>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="conteudo-principal">
+        
         <section>
-            <h2>Dúvidas Mais Frequentes sobre o Evento</h2>
+            <h2>Perguntas Frequentes sobre os Astros e a Programação</h2>
             <p>
-                Clique sobre qualquer uma das perguntas abaixo para expandir e visualizar a resposta correspondente. Este recurso utiliza exclusivamente a funcionalidade interativa nativa do HTML5 (tags <code>&lt;details&gt;</code> e <code>&lt;summary&gt;</code>), sem necessidade de qualquer script ou código JavaScript.
+                Clique sobre qualquer uma das perguntas abaixo para expandir e ler a resposta correspondente. Este componente utiliza as tags semânticas nativas do HTML5 (<code>&lt;details&gt;</code> e <code>&lt;summary&gt;</code>), dispensando totalmente o uso de JavaScript ou bibliotecas externas.
             </p>
 
             <!-- FAQ 1 -->
             <details>
-                <summary><strong>1. Quem pode se inscrever e participar do Tech Challenge 2026&trade;?</strong></summary>
+                <summary><strong>1. Quais são as lendas da computação confirmadas no Tech Challenge 2026&trade;?</strong></summary>
                 <p>
-                    O evento é aberto a toda a comunidade: estudantes de cursos técnicos, graduação ou pós-graduação (do IFCE e de outras instituições de ensino), professores, pesquisadores, profissionais da área de Tecnologia da Informação e qualquer pessoa interessada em desenvolvimento web, inteligência artificial, redes e software livre.
+                    O evento contará com a presença histórica de Alan Gaúcho / Alan Turing (Pai da Ciência da Computação Teórica e IA), Turing Stallman Gaúcho (Movimento Software Livre), Ada Lovelace (Primeira Programadora da História), Linus Torvalds (Criador do Linux e do Git), Tim Berners-Lee (Criador da World Wide Web e do W3C) e Neymar Jr, que conduzirá a palestra especial de encerramento.
                 </p>
             </details>
 
@@ -43,9 +57,9 @@
 
             <!-- FAQ 2 -->
             <details>
-                <summary><strong>2. O evento possui alguma taxa de inscrição ou cobrança de valores?</strong></summary>
+                <summary><strong>2. Por que Neymar Jr é anunciado como "pai da ciência da computação" na programação?</strong></summary>
                 <p>
-                    <strong>Não.</strong> O Tech Challenge é um evento 100% gratuito e público, promovido pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú, como parte integrante das atividades acadêmicas do curso de Informática e da disciplina de Programação Web I. Não há qualquer cobrança de matrícula, inscrição ou emissão de certificados.
+                    Trata-se do painel especial e bem-humorado de encerramento do evento. A palestra abordará como o raciocínio sob extrema pressão física e espacial mimetiza sistemas computacionais de tempo real, explorando processamento paralelo em campo, leitura vetorial de adversários e o drible ágil de exceções inesperadas em tempo de execução.
                 </p>
             </details>
 
@@ -53,9 +67,9 @@
 
             <!-- FAQ 3 -->
             <details>
-                <summary><strong>3. Haverá emissão de certificado de participação? Qual a carga horária?</strong></summary>
+                <summary><strong>3. O evento possui taxa de inscrição ou qualquer cobrança financeira?</strong></summary>
                 <p>
-                    <strong>Sim.</strong> Todos os participantes que obtiverem no mínimo 75% de presença nas atividades em que estiverem inscritos receberão um Certificado Digital Oficial de Participação com carga horária de <strong>20 horas complementares</strong>. Os certificados serão disponibilizados para download em até 10 dias úteis após o encerramento do evento.
+                    <strong>Não.</strong> O Tech Challenge é 100% público e gratuito, realizado pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú com o propósito de incentivar o conhecimento científico e tecnológico. Nenhuma taxa de inscrição ou cobrança por certificado será efetuada.
                 </p>
             </details>
 
@@ -63,9 +77,9 @@
 
             <!-- FAQ 4 -->
             <details>
-                <summary><strong>4. Posso me inscrever em mais de uma oficina técnica prática?</strong></summary>
+                <summary><strong>4. Haverá emissão de certificado oficial com horas complementares?</strong></summary>
                 <p>
-                    Sim, desde que os horários das oficinas não coincidam na grade de programação. Como as oficinas práticas ocorrem simultaneamente em laboratórios distintos no período da tarde, recomendamos selecionar a oficina de sua maior prioridade no formulário de inscrição para garantir sua vaga na respectiva sala de aula.
+                    <strong>Sim.</strong> Todos os participantes que obtiverem presença mínima comprovada de 75% nas atividades receberão um Certificado Digital Oficial de <strong>20 horas de atividades complementares</strong>, emitido pela coordenação acadêmica do IFCE.
                 </p>
             </details>
 
@@ -73,9 +87,9 @@
 
             <!-- FAQ 5 -->
             <details>
-                <summary><strong>5. Como funciona a premiação do Hackathon de Inovação Aberta?</strong></summary>
+                <summary><strong>5. Como posso garantir vaga na oficina prática com Linus Torvalds ou Tim Berners-Lee?</strong></summary>
                 <p>
-                    As equipes do Hackathon (compostas por 3 a 5 membros) serão avaliadas por uma comissão julgadora formada por professores e profissionais convidados. Serão premiados os 3 primeiros colocados com troféus institucionais, certificados de honra ao mérito técnico e kits especiais fornecidos pelas empresas parceiras do ecossistema de tecnologia.
+                    A homologação de vagas nos laboratórios de informática é realizada por ordem cronológica de submissão do formulário de inscrição na página inicial. Recomendamos preencher o formulário o quanto antes, assinalando a oficina desejada no campo correspondente.
                 </p>
             </details>
 
@@ -83,9 +97,9 @@
 
             <!-- FAQ 6 -->
             <details>
-                <summary><strong>6. É necessário levar notebook próprio para os laboratórios e para o Hackathon?</strong></summary>
+                <summary><strong>6. É necessário trazer computador pessoal para as oficinas e para o Hackathon?</strong></summary>
                 <p>
-                    Não é estritamente obrigatório, pois os Laboratórios de Informática e Redes do IFCE Campus Maracanaú contam com computadores modernos já configurados com sistema operacional Linux e ferramentas de desenvolvimento instaladas. Entretanto, para o Hackathon, os participantes têm total liberdade para trazer e utilizar seus próprios notebooks pessoais, caso prefiram trabalhar em seus ambientes personalizados.
+                    Não é obrigatório, pois os laboratórios do IFCE Campus Maracanaú contam com estações completas preparadas com sistema operacional Linux. No entanto, para as equipes participantes do Hackathon, é permitido e altamente recomendado o uso de notebooks próprios para maior comodidade.
                 </p>
             </details>
 
@@ -93,9 +107,9 @@
 
             <!-- FAQ 7 -->
             <details>
-                <summary><strong>7. Não possuo conhecimento prévio de programação. Posso participar mesmo assim?</strong></summary>
+                <summary><strong>7. Não possuo experiência avançada em computação. Posso assistir às conferências?</strong></summary>
                 <p>
-                    <strong>Com certeza!</strong> O Tech Challenge foi planejado para acolher desde iniciantes absolutos até desenvolvedores avançados. Teremos palestras panorâmicas, mesas redondas sobre acessibilidade e inclusão digital, e oficinas com abordagem passo a passo desde os fundamentos da linguagem HTML5.
+                    <strong>Certamente!</strong> As palestras de Ada Lovelace e Alan Turing partirão dos princípios conceituais e históricos da lógica de programação e da computabilidade, sendo plenamente acessíveis e enriquecedoras para iniciantes, estudantes do ensino técnico e entusiastas.
                 </p>
             </details>
 
@@ -105,8 +119,7 @@
             <details>
                 <summary><strong>8. Como proceder caso eu precise corrigir meus dados ou cancelar a inscrição?</strong></summary>
                 <p>
-                    Caso precise retificar algum dado preenchido no formulário de inscrição ou não possa comparecer, basta enviar uma mensagem para a coordenação através do e-mail 
-                    <a href="mailto:techchallenge@maracanau.ifce.edu.br">techchallenge@maracanau.ifce.edu.br</a> informando seu nome completo, CPF e o ajuste desejado. Assim, poderemos liberar a vaga na oficina para outro estudante da lista de espera.
+                    Para corrigir qualquer informação cadastral ou solicitar o cancelamento de sua inscrição, envie uma mensagem para o e-mail oficial <a href="mailto:techchallenge@maracanau.ifce.edu.br">techchallenge@maracanau.ifce.edu.br</a> informando seu nome completo e CPF.
                 </p>
             </details>
 
@@ -115,36 +128,46 @@
 
         <hr>
 
-        <!-- Seção de Contato e Atendimento -->
+        <!-- SEÇÃO DE SUPORTE EM TABELA ALINHADA -->
         <section id="contato-suporte">
-            <h2>Não encontrou a resposta para a sua dúvida?</h2>
+            <h2>Canais de Atendimento e Suporte ao Participante</h2>
             <p>
-                Nossa equipe organizadora está pronta para atender você. Utilize os canais oficiais de comunicação abaixo para enviar suas dúvidas ou solicitar suporte adicional:
+                Caso sua dúvida não tenha sido sanada na relação acima, contate a comissão organizadora pelos canais abaixo:
             </p>
-            <address>
-                <strong>Comissão Organizadora do Tech Challenge 2026</strong><br>
-                Coordenação do Curso Técnico em Informática &ndash; IFCE Campus Maracanaú<br>
-                Endereço: Av. Contorno Norte, 10 &ndash; Distrito Industrial I, Maracanaú - CE<br>
-                E-mail para suporte: <a href="mailto:techchallenge@maracanau.ifce.edu.br">techchallenge@maracanau.ifce.edu.br</a><br>
-                Telefone institucional: (85) 3878-6300 &bull; Ramal 6320
-            </address>
+
+            <table border="0" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td align="right" valign="top"><strong>Coordenação Geral:</strong></td>
+                    <td align="left">Curso Técnico em Informática &ndash; IFCE Campus Maracanaú</td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><strong>E-mail Institucional:</strong></td>
+                    <td align="left">
+                        <a href="mailto:techchallenge@maracanau.ifce.edu.br">techchallenge@maracanau.ifce.edu.br</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><strong>Telefone do Campus:</strong></td>
+                    <td align="left">(85) 3878-6300 &bull; Ramal 6320</td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><strong>Endereço:</strong></td>
+                    <td align="left">Av. Contorno Norte, 10 &ndash; Distrito Industrial I, Maracanaú - CE</td>
+                </tr>
+            </table>
+
             <p><a href="#inicio">&uarr; Voltar ao topo da página</a></p>
         </section>
+
     </main>
 
-    <hr>
-
-    <!-- ==================== RODAPÉ INSTITUCIONAL ==================== -->
+    <!-- RODAPÉ INSTITUCIONAL PADRÃO -->
     <footer>
-        <p>
-            <strong>Tech Challenge 2026&trade;</strong> &ndash; Programação Web I &bull; Prof. Daniel Ferreira.<br>
-            Instituto Federal de Educação, Ciência e Tecnologia do Ceará &ndash; Campus Maracanaú.<br>
-            <small>&copy; 2026 IFCE. Todos os direitos reservados. Interface construída estritamente em HTML5 puro, sem JavaScript e sem CSS.</small>
-        </p>
-        <p>
-            <a href="index.html">&larr; Retornar à Página Principal</a> &bull; 
-            <a href="palestrantes.html">Ver Palestrantes Convidados &rarr;</a>
-        </p>
+        <hr>
+        <p>&copy; 2026 Tech Challenge &mdash; IFCE Campus Maracanaú &bull; Todos os direitos reservados.</p>
+        <p><strong>Desenvolvido por:</strong> Cauê Cavalcante Pereira.</p>
+        <p>Disciplina: Programação Web I &bull; Prof. Daniel Ferreira</p>
+        <p><a href="#inicio">&uarr; Voltar ao topo da página</a></p>
     </footer>
 
 </body>
