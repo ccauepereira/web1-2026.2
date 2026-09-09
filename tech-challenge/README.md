@@ -1,7 +1,6 @@
 # Tech Challenge 2026&trade; &ndash; Programação Web I (IFCE)
 
-Projeto acadêmico correspondente ao Trabalho 3 (Tech Challenge) da disciplina de Programação Web I, ministrada pelo Prof. Daniel Ferreira no Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) &ndash; Campus Maracanaú.
-
+Projeto acadêmico correspondente ao Trabalho 3 (Tech Challenge) da disciplina de Programação Web I, ministrada pelo Prof. Daniel Ferreira no Instituto Federal de Educação, Ciência e Tecnologia do Ceará (IFCE) &ndash; Campus Maracanaú. (Evento é FICTICIO!)
 ---
 
 ## Identificação Institucional e Autoria
@@ -10,7 +9,7 @@ Projeto acadêmico correspondente ao Trabalho 3 (Tech Challenge) da disciplina d
 - **Disciplina:** Programação Web I
 - **Docente Orientador:** Prof. Daniel Ferreira
 - **Desenvolvido por:** Cauê Cavalcante Pereira.
-- **Tema do Projeto:** Portal Oficial do Evento "Tech Challenge 2026&trade;" &mdash; Edição Especial com os Astros e Lendas da Computação (Alan Gaúcho / Alan Turing, Turing Stallman Gaúcho, Ada Lovelace, Linus Torvalds, Tim Berners-Lee e Neymar Jr).
+- **Tema do Projeto:** Portal Oficial do Evento "Tech Challenge 2026" - evento ficticio &trade;" &mdash; Edição Especial com os Astros e Lendas da Computação (Alan Gaúcho / Alan Turing, Turing Stallman Gaúcho, Ada Lovelace, Linus Torvalds, Tim Berners-Lee e Neymar Jr).
 
 ---
 
