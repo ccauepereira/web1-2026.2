@@ -2,9 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Evento Fictício</title>
+</head>
     <title>Tech Challenge 2026&trade; | Programação Web I - IFCE Campus Maracanaú</title>
-    <title>  EVENTO TOTALMENTE FICTICIO!!!!!!!!!. </title>
+    <label for="sit_professor">Professor</label>
+    <input type="text" id="sit_professor" name="sit_professor"><title>  EVENTO TOTALMENTE FICTICIO!!!!!!!!!.fdghdr</title>
 </head>
 <body>
 
@@ -34,6 +36,7 @@
         <p>
             <strong>Data:</strong> 15 a 17 de Outubro de 2026 &bull; 
             <strong>Local:</strong> IFCE &ndash; Instituto Federal do Ceará (Campus Maracanaú) &bull; 
+            <strong>Modalidade:</strong> Presencial
             <strong>Modalidade:</strong> espacial
         </p>
 
@@ -67,15 +70,19 @@
             </p>
 
             <p>
+                Nesta edição especial, reunimos as mentes mais brilhantes e influentes da história da computação: desde os pioneiros fundamentais como Alan Turing e Ada Lovelace, passando pelos arquitetos da infraestrutura moderna como Linus Torvalds e Tim Berners-Lee, até o encerramento magistral com Neymar Jr debatendo otimização e controle de bola em tempo real. O evento celebra o poder transformador do código aberto, a interoperabilidade dos padrões W3C e a acessibilidade digital para todos os cidadãos.
                 Nesta edição especial, reunimos as mentes mais brilhantes e influentes da história da computação: Alan Gaúcho (Alan Turing), Turing Stallman Gaúcho, Ada Lovelace, Linus Torvalds, Tim Berners-Lee e o encerramento magistral com Neymar Jr debatendo performance e controle em tempo real. O evento celebra o poder transformador do código aberto, a interoperabilidade dos padrões W3C e a acessibilidade digital para todos os cidadãos.
             </p>
 
+            <!-- RF03: Imagem oficial do IFCE com figure, figcaption, alt e link clicável -->
             <!-- RF03: Banner principal atualizado para imagens/Banner.jpeg com figure, figcaption, alt e link do IFCE -->
             <figure>
                 <a href="https://ifce.edu.br" target="_blank" rel="noopener noreferrer">
+                    <img src="imagens/logo-ifce.png" alt="Logotipo Oficial do IFCE - Instituto Federal do Ceará">
                     <img src="imagens/Banner.jpeg" alt="Banner Oficial do Tech Challenge 2026 - IFCE Campus Maracanaú" width="600">
                 </a>
                 <figcaption>
+                    Logotipo oficial do Instituto Federal do Ceará (IFCE) &mdash; Campus Maracanaú. Clique na imagem para acessar o portal institucional (&rarr;).
                     Banner oficial do Tech Challenge 2026&trade; no IFCE Campus Maracanaú. Clique na imagem para acessar o portal institucional do IFCE (&rarr;).
                 </figcaption>
             </figure>
@@ -83,6 +90,7 @@
             <!-- Componentes Nativos de Progresso e Ocupação (HTML5 Puro) -->
             <fieldset>
                 <legend><strong>Status de Ocupação e Capacidade dos Ambientes</strong></legend>
+                <table border="0" cellpadding="5" cellspacing="0">
                 <table border="0" cellpadding="10" cellspacing="1">
                     <tr>
                         <td align="right"><strong>Taxa de Ocupação dos Auditórios:</strong></td>
@@ -129,11 +137,14 @@
                 </video>
             </article>
 
+            <!-- RF10: Áudio de boas-vindas com controls e fallback -->
             <!-- RF10: Áudio de boas-vindas atualizado com áudio audio/audio.mp4 -->
             <article>
                 <h3>Mensagem de Boas-Vindas da Coordenação (Áudio)</h3>
                 <p>Ouça as instruções e a mensagem da comissão organizadora para todos os participantes inscritos:</p>
                 <audio controls>
+                    <source src="audio/boas-vindas.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio HTML5. Você pode <a href="audio/boas-vindas.mp3" download>baixar o arquivo de áudio MP3 aqui</a>.
                     <source src="audio/audio.mp4" type="audio/mp4">
                     <source src="audio/audio.mp4" type="audio/mpeg">
                     Seu navegador não suporta a reprodução de áudio.
@@ -173,6 +184,7 @@
                     <!-- 2. Palestra Magna: Ada Lovelace -->
                     <tr>
                         <td align="center">09:00 &ndash; 10:30</td>
+                        <td>Palestra Magna: "A Origem dos Algoritmos e a Lógica de Programação"</td>
                         <td>Palestra Magna: "A Origem dos Algoritmos e Programação Pioneira"</td>
                         <td>Auditório Central</td>
                         <td>Ada Lovelace (Pioneira da Programação)</td>
@@ -184,15 +196,20 @@
                             <strong>Intervalo Institucional &bull; Coffee Break e Confraternização no Hall</strong>
                         </td>
                     </tr>
+                    <!-- 4. Palestra Magna: Alan Turing -->
                     <!-- 4. Palestra Magna: Alan Gaúcho / Alan Turing -->
                     <tr>
                         <td align="center">11:00 &ndash; 12:30</td>
+                        <td>Palestra Magna: "Fundamentos de Criptografia e Teoria da Computação"</td>
                         <td>Palestra Magna: "Fundamentos da Teoria da Computação e Algoritmos Clássicos"</td>
                         <td>Auditório Central</td>
+                        <td>Alan Turing (Pai da Ciência da Computação Teórica)</td>
                         <td>Alan Gaúcho / Alan Turing</td>
                     </tr>
                     <!-- 5. Oficina Técnica: Linus Torvalds com rowspan="2" (RF06) -->
                     <tr>
+                        <td rowspan="2" align="center">14:00 &ndash; 17:30</td>
+                        <td>Oficina Técnica: "Kernel Linux e Desenvolvimento Open Source"</td>
                         <td rowspan="2" align="center">14:00 &ndash; 16:30</td>
                         <td>Oficina Técnica: "Arquitetura do Kernel Linux e Controle de Versão com Git"</td>
                         <td>Laboratório de Sistemas 01</td>
@@ -200,10 +217,12 @@
                     </tr>
                     <!-- 6. Palestra e Prática: Tim Berners-Lee -->
                     <tr>
+                        <td>Palestra e Prática: "O Futuro dos Padrões Abertos da Web"</td>
                         <td>Palestra e Prática: "A Criação da World Wide Web e a Semântica do HTML"</td>
                         <td>Laboratório de Redes 02</td>
                         <td>Tim Berners-Lee (Criador da World Wide Web e W3C)</td>
                     </tr>
+                    <!-- 7. Competição / Hackathon -->
                     <!-- 7. Mesa Redonda: Turing Stallman Gaúcho -->
                     <tr>
                         <td align="center">16:30 &ndash; 18:00</td>
@@ -218,11 +237,13 @@
                         <td>Espaço de Inovação Aberta</td>
                         <td>Bancada de Especialistas e Juízes do IFCE</td>
                     </tr>
+                    <!-- 8. Painel Especial de Encerramento: Neymar Jr -->
                     <!-- 9. Painel Especial de Encerramento: Neymar Jr -->
                     <tr>
                         <td align="center">20:30 &ndash; 22:00</td>
                         <td>Painel Especial: "Dribles Lógicos, Otimização de Performance e Controle de Bola em Tempo Real" &bull; Cerimônia de Premiação</td>
                         <td>Auditório Central</td>
+                        <td>Neymar Jr ("Pai da Ciência da Computação")</td>
                         <td>Neymar Jr ("Neymar Jr pai da ciencia da computação")</td>
                     </tr>
                 </tbody>
@@ -255,6 +276,10 @@
             <!-- Oficinas Temáticas (mínimo 4 opções) -->
             <h3>Oficinas Temáticas Práticas</h3>
             <ul>
+                <li><strong>Oficina 1 (Linus Torvalds):</strong> Kernel Linux, chamadas de sistema e versionamento distribuído com Git.</li>
+                <li><strong>Oficina 2 (Tim Berners-Lee):</strong> Arquitetura Web, semântica nativa do HTML5 e diretrizes da W3C.</li>
+                <li><strong>Oficina 3 (Ada Lovelace):</strong> Lógica algorítmica, estruturas de repetição e decomposição de problemas.</li>
+                <li><strong>Oficina 4 (Alan Turing):</strong> Criptografia clássica e moderna, autômatos finitos e testes de inteligência.</li>
                 <li><strong>Oficina 1 (Linus Torvalds):</strong> Arquitetura do Kernel Linux e Controle de Versão com Git.</li>
                 <li><strong>Oficina 2 (Tim Berners-Lee):</strong> A Criação da World Wide Web e a Semântica do HTML.</li>
                 <li><strong>Oficina 3 (Ada Lovelace):</strong> A Origem dos Algoritmos e Programação Pioneira.</li>
@@ -460,6 +485,7 @@
                                 <input type="radio" id="sit_estudante" name="situacao" value="estudante" checked>
                                 <label for="sit_estudante">Estudante (Ensino Técnico, Graduação ou Pós-Graduação)</label><br>
                                 <input type="radio" id="sit_professor" name="situacao" value="professor">
+                                <label for="sit_professor">Professor / Docente / Pesquisador</label><br>
                                 <label for="sit EVENTO TOTALMENTE FICTICIO!!!!!!!!!._professor">Professor / Docente / Pesquisador</label><br>
                                 <input type="radio" id="sit_profissional" name="situacao" value="profissional">
                                 <label for="sit_profissional">Profissional da área de Tecnologia da Informação</label><br>
@@ -502,16 +528,22 @@
 
                 <!-- RF15: Escolha de Oficinas Temáticas com os Mestres -->
                 <fieldset>
+                    <legend><strong>5. Inscrição em Oficinas Temáticas (Seleção Múltipla)</strong></legend>
                     <legend><strong>5. Inscriçã EVENTO TOTALMENTE FICTICIO!!!!!!!!!.o em Oficinas Temáticas (Seleção Múltipla)</strong></legend>
                     <table border="0" cellpadding="5" cellspacing="0">
                         <tr>
                             <td align="right" valign="top"><strong>Escolha as oficinas:</strong></td>
                             <td align="left">
                                 <input type="checkbox" id="oficina_linus" name="oficinas" value="oficina_linus">
+                                <label for="oficina_linus">Oficina 1: Kernel Linux e Desenvolvimento Open Source &ndash; Linus Torvalds</label><br>
                                 <label for="oficina_linus">Oficina 1: Arquitetura do Kernel Linux e Controle de Versão com Git &ndash; Linus Torvalds</label><br>
                                 <input type="checkbox" id="oficina_tim" name="oficinas" value="oficina_tim">
+                                <label for="oficina_tim">Oficina 2: Arquitetura da Web e Padrões Semânticos W3C &ndash; Tim Berners-Lee</label><br>
                                 <label for="oficina_tim">Oficina 2: A Criação da World Wide Web e a Semântica do HTML &ndash; Tim Berners-Lee</label><br>
                                 <input type="checkbox" id="oficina_ada" name="oficinas" value="oficina_ada">
+                                <label for="oficina_ada">Oficina 3: Lógica Algorítmica e Estruturação de Programas &ndash; Ada Lovelace</label><br>
+                                <input type="checkbox" id="oficina_turing" name="oficinas" value="oficina_turing">
+                                <label for="oficina_turing">Oficina 4: Criptografia Aplicada e Autômatos Universais &ndash; Alan Turing</label>
                                 <label for="oficina_ada">Oficina 3: A Origem dos Algoritmos e Programação Pioneira &ndash; Ada Lovelace</label><br>
                                 <input type="checkbox" id="oficina_alan" name="oficinas" value="oficina_alan">
                                 <label for="oficina_alan">Oficina 4: Fundamentos da Teoria da Computação e Algoritmos Clássicos &ndash; Alan Gaúcho / Alan Turing</label><br>
@@ -524,6 +556,7 @@
 
                 <br>
 
+                <!-- RF16: Palestra Principal (Seleção única entre as 4 atrações magnas) -->
                 <!-- RF16: Palestra Principal (Seleção única entre as atrações magnas) -->
                 <fieldset>
                     <legend><strong>6. Palestra Principal Escolhida (Seleção Única)</strong></legend>
@@ -532,14 +565,19 @@
                             <td align="right" valign="top"><strong>Palestra magna:</strong></td>
                             <td align="left">
                                 <input type="radio" id="palestra_ada" name="palestra_principal" value="palestra_ada" checked>
+                                <label for="palestra_ada">Palestra 1: "A Origem dos Algoritmos e a Lógica de Programação" &ndash; Ada Lovelace</label><br>
+                                <input type="radio" id="palestra_turing" name="palestra_principal" value="palestra_turing">
+                                <label for="palestra_turing">Palestra 2: "Fundamentos de Criptografia e Teoria da Computação" &ndash; Alan Turing</label><br>
                                 <label for="palestra_ada">Palestra 1: "A Origem dos Algoritmos e Programação Pioneira" &ndash; Ada Lovelace</label><br>
                                 <input type="radio" id="palestra_alan" name="palestra_principal" value="palestra_alan">
                                 <label for="palestra_alan">Palestra 2: "Fundamentos da Teoria da Computação e Algoritmos Clássicos" &ndash; Alan Gaúcho / Alan Turing</label><br>
                                 <input type="radio" id="palestra_tim" name="palestra_principal" value="palestra_tim">
+                                <label for="palestra_tim">Palestra 3: "O Futuro dos Padrões Abertos da Web" &ndash; Tim Berners-Lee</label><br>
                                 <label for="palestra_tim">Palestra 3: "A Criação da World Wide Web e a Semântica do HTML" &ndash; Tim Berners-Lee</label><br>
                                 <input type="radio" id="palestra_stallman" name="palestra_principal" value="palestra_stallman">
                                 <label for="palestra_stallman">Palestra 4: "A Filosofia GNU, Software Livre e a Liberdade do Usuário na Web" &ndash; Turing Stallman Gaúcho</label><br>
                                 <input type="radio" id="palestra_neymar" name="palestra_principal" value="palestra_neymar">
+                                <label for="palestra_neymar">Palestra 4: "Neymar Jr pai da ciencia da computação: Dribles Lógicos e Performance em Tempo Real" &ndash; Neymar Jr</label>
                                 <label for="palestra_neymar">Palestra 5: "Neymar Jr pai da ciencia da computação: Dribles Lógicos, Otimização de Performance e Controle de Bola em Tempo Real" &ndash; Neymar Jr</label>
                             </td>
                         </tr>
@@ -568,6 +606,7 @@
                     </table>
                 </fieldset>
 
+                <br>
                 <br> EVENTO TOTALMENTE FICTICIO!!!!!!!!!.
 
                 <!-- RF18 e RF19: Tempo de Experiência e Sistema Operacional -->
@@ -613,6 +652,7 @@
                                 <label for="origem_professores">Aviso de Professores em sala de aula ou Murais do IFCE</label><br>
                                 <input type="radio" id="origem_redes" name="origem_divulgacao" value="redes_sociais">
                                 <label for="origem_redes">Redes Sociais Institucionais do IFCE</label><br>
+                                <input type="radio" id="origem_colegas" name="origem_divulgacao" value="colegas">
                                 <input type="radi EVENTO TOTALMENTE FICTICIO!!!!!!!!!.o" id="origem_colegas" name="origem_divulgacao" value="colegas">
                                 <label for="origem_colegas">Indicação de Colegas, Amigos ou Grupos de Estudo</label><br>
                                 <input type="radio" id="origem_cartazes" name="origem_divulgacao" value="cartazes">
@@ -691,6 +731,7 @@
 
             <!-- Bloco de Destaque com blockquote -->
             <blockquote>
+                <strong>Atenção aos Prazos e Vagas:</strong> Devido à presença histórica de Alan Turing, Ada Lovelace, Linus Torvalds, Tim Berners-Lee e Neymar Jr, as vagas presenciais nos auditórios e laboratórios são estritamente limitadas.
                 <strong>Atenção aos Prazos e Vagas:</strong> Devido à presença histórica de Alan Gaúcho, Turing Stallman Gaúcho, Ada Lovelace, Linus Torvalds, Tim Berners-Lee e Neymar Jr, as vagas presenciais nos auditórios e laboratórios são estritamente limitadas.
             </blockquote>
 
@@ -788,10 +829,12 @@
         </section>
 
     </main>
+
  EVENTO TOTALMENTE FICTICIO!!!!!!!!!. EVENTO TOTALMENTE FICTICIO!!!!!!!!!.
     <!-- RODAPÉ INSTITUCIONAL PADRÃO -->
     <footer>
         <hr>
+        <p>&copy; 2026 Tech Challenge &mdash; IFCE Campus Maracanaú &bull; Todos os direitos reservados.</p>
         <p>&copy; 2026 Tech Challenge &mdash; IFCE Campus Maracanaú &bull;  EVENTO TOTALMENTE FICTICIO!!!!!!!!!.</p>
         <p><strong>Desenvolvido por:</strong> Cauê Cavalcante Pereira.</p>
         <p>Disciplina: Programação Web I &bull; Prof. Daniel Ferreira</p>
