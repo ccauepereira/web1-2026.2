@@ -35,6 +35,10 @@ p {
     font-weight: bold;
 }
 
+#p1.destacar{
+    color: red;
+    font-weight: bold;
+}
 .destaque-emoji {
     font-variant-emoji: emoji;
     font-size: 1.5rem;
