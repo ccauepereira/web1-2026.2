@@ -1,0 +1,18 @@
+
+p {
+  font-size: 16px; color: gray;
+} 
+
+
+#topo {
+    font-style: italic; font-variant: small-caps; font-weight: bold; font-size: 60px; font-family: "Helvetica Neue", Arial, sans-serif; text-align: center;
+}
+
+
+#teste_dois {
+    text-transform: lowercase; text-decoration: underline aqua; letter-spacing: 3px;  word-spacing: 5px; text-align: left; text-indent: 10%; vertical-align: middle; line-height: 1.5; 
+}
+
+.destaque {
+  background-color: yellow; font-weight: bold; color: black;
+}
