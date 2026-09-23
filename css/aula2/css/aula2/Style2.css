@@ -1,18 +1,41 @@
-
+body{
+    background-color: rgb(27, 23, 23);
+}
 p {
   font-size: 16px; color: gray;
 } 
 
 
 #topo {
-    font-style: italic; font-variant: small-caps; font-weight: bold; font-size: 60px; font-family: "Helvetica Neue", Arial, sans-serif; text-align: center;
+    font-style: italic; font-variant: small-caps; font-weight: bold; font-size: 60px; font-family: "Helvetica Neue", Arial, sans-serif; text-align: center; color: blue;
 }
 
 
 #teste_dois {
-    text-transform: lowercase; text-decoration: underline aqua; letter-spacing: 3px;  word-spacing: 5px; text-align: left; text-indent: 10%; vertical-align: middle; line-height: 1.5; 
+    text-transform: lowercase; text-decoration: underline aqua; letter-spacing: 5px;  word-spacing: 5px; text-align: left; text-indent: 10%; vertical-align: middle; line-height: 1.5; 
 }
 
 .destaque {
-  background-color: yellow; font-weight: bold; color: black;
+  background-color: white; font-weight: bold; color: black;
+}
+
+#subsecao{
+    color: blue;
+    text-transform: lowercase;
+}
+
+.classe{
+    background-color: violet; font-variant-position: super;
+}
+
+
+#teste_dois span {
+    font-variant-emoji: emoji;
+    color: #ff4757;
+    font-weight: bold;
+}
+
+.destaque-emoji {
+    font-variant-emoji: emoji;
+    font-size: 1.5rem;
 }
