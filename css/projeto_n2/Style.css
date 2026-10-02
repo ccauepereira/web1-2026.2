@@ -80,10 +80,6 @@ header::after {
     clear: both;
 }
 
-.grade-computadores .linha-pc:last-child {
-    margin-bottom: 10px;
-}
-
 .computador {
     width: 75px; 
     height: 65px;
