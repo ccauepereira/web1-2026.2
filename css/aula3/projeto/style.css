@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: antiquewhite;
+    width: 800px;
+    overflow: auto;
+}
+
+#cursosTecnologia {
+    background-color: rgb(235, 235, 235);
+    border: 5px solid rgb(202, 124, 124);
+    width: 50%;
+    float: left;
+}
+
+#cursosMedicina {
+    background-color: brown;
+    border: 5px solid black;
+    width: 50%;
+    float: left;
+}

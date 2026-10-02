@@ -1,0 +1,14 @@
+a:link {
+    color: blue;
+}
+
+a:visited{
+    color:red;
+}
+
+a:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: blue;
+    background-color: yellow;
+}

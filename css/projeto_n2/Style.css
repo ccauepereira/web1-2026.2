@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    border: 3px solid black;
+    width: 850px;
+    margin: 30px auto;
+    background-color: #fff;
+}
+
+
+header {
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo-box {
+    width: 150px;
+    height: 100px;
+    padding: 15px;
+    float: left;
+    border-right: 3px solid black;
+    text-align: center;
+}
+
+.logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nome-lab {
+    width: 694px;
+    height: 100px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+}
+
+.conteudo-principal {
+    padding: 30px 40px;
+    border-bottom: 3px solid black;
+}
+
+.conteudo-principal::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.conteudo-principal h2 {
+    font-size: 18px;
+    margin-bottom: 35px;
+    font-weight: normal;
+}
+
+.grade-computadores {
+    width: 100%;
+}
+
+.linha-pc {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.linha-pc::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.grade-computadores .linha-pc:last-child {
+    margin-bottom: 10px;
+}
+
+.computador {
+    width: 75px; 
+    height: 65px;
+    border: 3px solid black;
+    float: left;
+    margin-right: 12px;
+    text-align: center;
+    line-height: 59px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.espaco-meio {
+    width: 50px; 
+    height: 65px;
+    float: left;
+}
+
+.linha-pc .computador:last-child {
+    margin-right: 0;
+}
+
+
+footer {
+    padding: 25px 40px;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.legenda-item {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.legenda-item::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.legenda-item:last-child {
+    margin-bottom: 0;
+}
+
+.status {
+    width: 55px;
+    height: 25px;
+    border: 3px solid black;
+    float: left;
+    margin-right: 15px;
+}
+
+.txt-legenda {
+    float: left;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.ligado {
+    background-color: green;
+    color: white; 
+}
+
+.desligado {
+    background-color: red;
+    color: white; 
+}
+
