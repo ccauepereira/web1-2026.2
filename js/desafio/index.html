@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Javascript - DOM</title>
+</head>
+<body>
+    <form>
+        <label for="iptNome">Nome: </label>
+        <input type="text" id="iptNome" oninput="mostrar()"><br>
+        
+        <small>Caracteres digitados: <span id="spnContador">0</span></small><br><br>
+
+        <button type="button" onclick="mostrar()" id="btnMostrar">Mostrar</button>
+        <button type="button" onclick="limpar()" id="btnLimpar">Limpar</button>
+
+        <span id="spnMsg"></span>
+    </form>
+</body>
+</html>
