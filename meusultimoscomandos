@@ -1,0 +1,10 @@
+  586  cd 
+  587  cp /home/aluno/sor/bim1/conteudobim1/poo/bim1
+  588  ls -R sor/
+  589  ls -R sor/ poo/
+  590  tree sor/ poo/ > minhaestrutura
+  591  grep -r"printf" sor/
+  592  grep -r "printf" sor/
+  593  history 10 > meusultimoscomandos
+  594  binario
+  595  history 10 > meusultimoscomandos
