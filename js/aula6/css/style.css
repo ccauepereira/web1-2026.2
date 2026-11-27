@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+    background-color: #f8f9fa;
+}
+
+/* Container externo */
+#game {
+    width: 680px;
+    background-color: #ffffff;
+    border: 2px solid #222222;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Cabeçalho superior */
+#input {
+    padding: 20px 35px;
+    border-bottom: 2px solid #222222;
+}
+
+#input form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#input label {
+    font-weight: 700;
+    font-size: 16px;
+    color: #222222;
+}
+
+#input input {
+    width: 240px;
+    height: 36px;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+#input button {
+    width: 130px;
+    height: 40px;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#input button:hover {
+    background-color: #eaeaea;
+}
+
+/* Corpo da caixa */
+.conteudo {
+    padding: 35px;
+}
+
+/* Grade perfeitamente alinhada */
+#games_boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    min-height: 100px;
+    margin-bottom: 35px;
+}
+
+/* Todos os inputs gerados pelo JS terão exatamente o mesmo tamanho */
+#games_boxes input {
+    width: 100%;
+    height: 38px;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+}
+
+#games_boxes input:focus,
+#input input:focus,
+.rodape-jogo input:focus {
+    border-color: #0066cc;
+}
+
+/* Linha do "escolhido" */
+.rodape-jogo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rodape-jogo label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.rodape-jogo input {
+    width: 110px;
+    height: 34px;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+.rodape-jogo button {
+    height: 34px;
+    padding: 0 20px;
+    border: 2px solid #222222;
+    border-radius: 8px;
+    background-color: #222222;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.rodape-jogo button:hover {
+    opacity: 0.85;
+}
+
+.rodape-jogo .btn-limpar {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.rodape-jogo .btn-limpar:hover {
+    background-color: #eaeaea;
+    opacity: 1;
+}
+
+/* Área de exibição do resultado */
+#game_output {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222222;
+}

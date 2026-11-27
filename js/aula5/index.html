@@ -7,21 +7,21 @@
 <body>
 
     <h3>1. Status da Nota</h3>
-    <input type="number" id="nota" placeholder="Digite a nota">
+    <input type="number" id="nota" placeholder="Digite a nota" onfocus="prepararCampo(this, 'resNota')">
     <button onclick="mostrarNota()">Verificar Nota</button>
     <p id="resNota"></p>
 
     <hr>
 
     <h3>2. Dia da Semana</h3>
-    <input type="number" id="dia" placeholder="Número de 1 a 7">
+    <input type="number" id="dia" placeholder="Número de 1 a 7" onfocus="prepararCampo(this, 'resDia')">
     <button onclick="mostrarDia()">Ver Dia</button>
     <p id="resDia"></p>
 
     <hr>
 
     <h3>3. Verificar Ano Bissexto</h3>
-    <input type="number" id="ano" placeholder="Digite o ano">
+    <input type="number" id="ano" placeholder="Digite o ano" onfocus="prepararCampo(this, 'resAno')">
     <button onclick="mostrarAno()">Verificar Ano</button>
     <p id="resAno"></p>
 

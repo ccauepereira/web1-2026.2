@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DOM - Sorteio e Probabilidade</title>
+</head>
+<body>
+
+    <div id="game">
+        <div id="input">
+            <form onsubmit="event.preventDefault(); mostrar();">
+                <label for="iptX">QUANT:</label>
+                <input type="number" id="iptX" min="1" required>
+                <button type="submit">GERAR</button>
+            </form>
+        </div>
+
+
+        <div class="conteudo">
+            <div id="games_boxes"></div>
+
+            <div class="rodape-jogo">
+                <label for="iptEscolha">escolhido</label>
+                <input type="number" id="iptEscolha">
+                <button type="button" onclick="criarJogo()">JOGAR</button>
+                <button type="button" class="btn-limpar" onclick="limpar()">LIMPAR</button>
+            </div>
+
+            
+            <div id="game_output"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

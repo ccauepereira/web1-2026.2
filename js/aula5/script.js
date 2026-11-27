@@ -6,7 +6,6 @@ function exibirPerfilUsuario(nomeUsuario, idadeUsuario, alturaUsuario) {
     console.log("Tipo de altura:", typeof alturaUsuario);
 }
 
-
 console.log("10" + 5);   // "105"
 console.log("10" - 5);   // 5
 console.log("10" == 10); // true
@@ -40,7 +39,6 @@ function verificarAnoBi(anoInformado) {
     return ehBi;
 }
 
-
 function mostrarNota() {
     const nota = Number(document.getElementById("nota").value);
     document.getElementById("resNota").innerText = obterStatusNota(nota);
@@ -55,4 +53,10 @@ function mostrarAno() {
     const ano = Number(document.getElementById("ano").value);
     const ehBissexto = verificarAnoBi(ano);
     document.getElementById("resAno").innerText = ehBissexto ? "É bissexto" : "Não é bissexto";
+}
+
+// Nova função chamada pelo onfocus
+function prepararCampo(elementoInput, idResultado) {
+    elementoInput.value = "";
+    document.getElementById(idResultado).innerText = "";
 }
